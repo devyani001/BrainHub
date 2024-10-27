@@ -17,10 +17,17 @@
     border: 1px solid green;
 }
 
-.left {
+.left-logo {
     border: 1px solid purple;
     height: 120px;     
     width: 170px;
+    background-image: url("BHlogo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    
 }
 
 .right {
