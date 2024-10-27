@@ -19,6 +19,8 @@
 
 .left {
     border: 1px solid purple;
+    height: 120px;     
+    width: 170px;
 }
 
 .right {
