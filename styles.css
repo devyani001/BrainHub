@@ -4,3 +4,34 @@
     box-sizing: border-box;
 }
 
+/* nav bar */
+
+ul{
+    list-style: none;
+}
+
+.main-nav{
+    margin-top: 0px;
+    justify-content: space-between;
+}
+
+.logo img{
+    height: 120px;
+    width: 170px;
+}
+
+.navlinks {
+    flex-basis: 730px;
+}
+
+.navlinks ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+/* utility classes */
+
+.flex{
+    display: flex;
+    align-items: center;
+}
