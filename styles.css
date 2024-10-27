@@ -38,6 +38,11 @@ ul{
     justify-content: end;
     margin-top: 30px;
     gap: 40px;
+    
+}
+
+.nav-toggle{
+    display: none;
 }
 
 .hover-link{
@@ -72,6 +77,7 @@ ul{
 .main-text h1{
     font-size: 62px;
     text-shadow: 3px 3px 0px gray;
+    overflow: hidden;
 }
 
 .main-text p{
@@ -88,4 +94,21 @@ ul{
 .flex{
     display: flex;
     /* align-items: center; */
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.25rem;
 }

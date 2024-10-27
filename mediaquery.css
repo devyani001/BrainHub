@@ -1,12 +1,36 @@
 @media screen and (max-width: 991px) {
+    h3{
 
+        font-size: 1.2rem;
+    }
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .navlinks{
+        display: none;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
 }
 
 @media screen and (max-width: 640px) {
+
+    h1{
+        font-size: 2rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
     .main-text h1{
         font-size: 62px;
         text-shadow: 3px 3px 0px gray;
