@@ -62,7 +62,7 @@ ul{
     width: 90%;
     color: #fff;
     position: absolute;
-    top: 40%;
+    top: 47%;
     left: 50%; 
     transform: translate(-50%,-50%);/*for align text centre*/
     text-align: center;
@@ -71,12 +71,16 @@ ul{
 
 .main-text h1{
     font-size: 62px;
+    text-shadow: 3px 3px 0px gray;
 }
 
 .main-text p{
-
+    /* font-size: 15px; */
 }
 
+.login-box{
+    margin-top: 20px;
+}
 
 
 /* utility classes */
