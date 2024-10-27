@@ -1,0 +1,15 @@
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+    .main-text h1{
+        font-size: 62px;
+        text-shadow: 3px 3px 0px gray;
+        overflow: hidden;
+    }
+}
