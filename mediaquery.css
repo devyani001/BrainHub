@@ -1,39 +1,98 @@
-@media screen and (max-width: 991px) {
-    h3{
+@media screen and (max-width: 479px) {
 
-        font-size: 1.2rem;
+    /* 1st page */
+
+    .header,
+    image {
+        background-position: 800px;
     }
-    .nav-toggle{
-        display: block;
+
+    .main-text h1 {
+        font-size: 25px;
+        color: white;
+    }
+
+    .logo {
+        border: 2px solid none;
+        width: 77px;
+        height: 77px;
+        background-position: start;
+        margin-left: 0;
+    }
+
+    .left-side {
+        color: #fff;
+        border: 1px solid none;
+        font-family: "Jacquard 12", system-ui;
+        font-size: 50px;
+        margin-left: 0px;
+        margin-top: 10px;
+        letter-spacing: 1px;
+        overflow: initial;
+    }
+
+    .navbar {
+        border: 2px solid none;
+        flex: 1;
+        align-self: start;
+        text-align: right;
+        background-color: #9aa5b1;
+        background-size: cover;
+        position: absolute;
+        height: 100vh;
+        font-size: 16px;
+        left: -500px;
+        padding: 20px 50px;
+        top: 100px;
+        width: 100%;
+        transition: 0.2s ease-in-out;
+    }
+
+    .navbar.active {
+        left: 0px;
+        z-index: 2;
+    }
+
+    .navbar ul li a {
+        color: #0d2436;
+        text-decoration: none;
+        /* display: none; */
+        /* background-color: wheat; */
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .content {
+        /* background-color: aliceblue; */
+    }
+
+    .burger {
+        color: green;
         margin-right: 20px;
     }
 
-    .navlinks{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 767px) {
-
-}
-
-@media screen and (max-width: 640px) {
-
-    h1{
-        font-size: 2rem;
-    }
-    
-    h2{
-        font-size: 1.5rem;
+    #toggle {
+        display: block;
     }
 
-    p{
-        font-size: 1rem;
+    .main-text p {
+        font-size: 15px;
+        color: #fff;
     }
 
-    .main-text h1{
-        font-size: 62px;
-        text-shadow: 3px 3px 0px gray;
-        overflow: hidden;
+    .icon {
+        display: block;
+        color: green;
+
     }
-}
+
+    .left-side {
+        width: 100%;
+    }
+
+
+}    

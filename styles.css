@@ -1,114 +1,126 @@
-*{
+* {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 
-.page_1{
-    background-image: url("https://wallpapercave.com/wp/wp3855137.jpg");
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
+body { 
+    /* background-color: #2F4F4F; */
+    /* background-color: #312e2e; */
+    /* background-color: #00072d; */
+    /* background-image: url("https://tse2.mm.bing.net/th?id=OIP.djs9mGfRplWKYqinBqqjjAHaDX&pid=Api&P=0&h=180"); */
+    font-family: 'poppins', sans-serif;
+} 
+  
+/* 1st page */
 
-/* nav bar */
-
-ul{
-    list-style: none;
-}
-
-.main-nav{
-    justify-content: space-between;
-    margin: 0 150px 0 150px;
-    
-}
-
-.logo img{
-    height: 120px;
-    width: 165px;
-}
-
-.navlinks {
-    /* flex-basis: 730px; */
+.header{
+    /* overflow: hidden; */
 
 }
-
-.navlinks ul {
-    justify-content: end;
-    margin-top: 30px;
-    gap: 40px;
-    
-}
-
-.nav-toggle{
+nav .fa {
     display: none;
 }
 
-.hover-link{
-    color: white;
-    text-decoration: none;
+.header , image {
+    min-height: 100vh; 
+    width: 100%;
+    /* background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(https://images.collegedunia.com/public/reviewPhotos/369496/inbound6449048373204272265.jpg?mode=cover); */
+    /* background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(https://wallpaperaccess.com/full/4230797.jpg); */
+    background-image: url("https://wallpapercave.com/wp/wp3855137.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* overflow: hidden; */
 }
 
-.container {
-    text-align: center;
-}
+nav{
+    border: 1px solid none;
+    display: flex;
+    padding: 0px 40px; 
+    justify-content: space-between;
+    align-items: center;
+}   
+ 
+.logo {
+    border: 2px solid none;
+    height: 120px;     
+    width: 170px; 
+    background-position: start;
+}  
 
-.heading {
-   
-    color: white;
-   
-    /* justify-self: center;   horizontal-center */
+.left-side{
+    color: #fff;
+    border: 1px solid none;
     
+    font-family: "Jacquard 12", system-ui;
+    /* font-weight: 400; */
+    font-size: 50px;
+    margin-left: 170px;
+    letter-spacing: 1px;
+}
+  
+.navbar { 
+    border: 2px solid none; 
+    flex: 1;
+    align-self: start;
+    text-align: right; 
+} 
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 12px;
+    position: relative;
+    border: 2px solid none;
+    
+} 
+
+.navbar ul li a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
 }
 
 .main-text{
-    text-align: center;
     width: 90%;
     color: #fff;
     position: absolute;
-    top: 49%;
+    top: 50%;
     left: 50%; 
     transform: translate(-50%,-50%);/*for align text centre*/
     text-align: center;
-    
 }
 
-.main-text h1{
+.main-text h1 {
     font-size: 62px;
-    text-shadow: 3px 3px 0px gray;
-    overflow: hidden;
+} 
+
+.main-text p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
 }
 
-.main-text p{
-    /* font-size: 15px; */
+.burger{
+    /* width: 100px; */
+    display: none;
 }
 
-.login-box{
-    margin-top: 20px;
-}
-
-
-/* utility classes */
-
-.flex{
-    display: flex;
-    /* align-items: center; */
-}
-
-h1{
-    font-size: 3rem;
-}
-
-h2{
-    font-size: 2rem;
-}
-
-h3{
-
-    font-size: 1.5rem;
-}
-
-p{
-    font-size: 1.25rem;
+nav .fa{
+    display: none;/*icon will be hidden for larger screen devices*/
 }
