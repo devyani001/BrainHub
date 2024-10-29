@@ -38,7 +38,7 @@
         text-align: center;
         color: white;
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         /* background: transparent; */
     }
 
@@ -65,12 +65,12 @@
     }
 
     .container {
-        border: 2px solid none;
+        border: 2px solid red;
         height: 2700px;
         display: flex;
         /* flex-direction: column-reverse; */
         flex-wrap: wrap;
-        row-gap: 0px;
+        row-gap: 100px;
         /* column-gap: 20px; */
         /* justify-content: space-around; */
     justify-content: center;
@@ -78,7 +78,7 @@
     }
     
     .box {
-        /* border: 1px solid none; */
+        border: 1px solid green;
         color: white;
         height: 300px;
         width: 300px;
