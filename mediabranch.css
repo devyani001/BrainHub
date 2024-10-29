@@ -89,7 +89,8 @@
 
     .box:hover {
         box-shadow: 10px 10px 0 0 grey;
-        box-shadow: 0 0 20px darkgray;
+        box-shadow: 0 0 21px darkgray;
+
     }
     
    
