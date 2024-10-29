@@ -9,3 +9,24 @@ body{
     background: url("it_image.png");
     background-size: cover;
 }
+
+.container {
+    border: 2px solid none;
+    height: 2000px;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+    row-gap: 50px;
+    /* column-gap: 20px; */
+    justify-content: space-around;
+
+    align-content: space-evenly;
+}
+
+.box {
+    border: 1px solid ;
+    color: white;
+    height: 230px;
+    width: 230px;
+    text-align: center;
+}
