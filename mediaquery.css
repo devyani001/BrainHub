@@ -95,4 +95,55 @@
     }
 
 
+     
+/* 2nd page */
+
+.icon{
+    display: block;
+    color: green;
+    
+}
+
+.containerr {
+    flex-direction: row;
+}
+
+.left-side {
+    width: 100%;
+}
+
+.subheading {
+    font-size: 16px;
+}
+
+.logo {
+
+}
+
+.clg-image {
+    width: 100%;
+    /* padding-inline: 12px; */
+    /* grid-auto -rows: 220px;  */
+}
+
+ .container {
+    flex-direction: column;
+}
+
+.gallary {
+    width: 100%;
+    padding-inline: 12px;
+    grid-auto-rows: 190px;
+} 
+
+.box {
+    grid-row: span 1;
+    grid-column: span 3;
+}
+
+#box-8 {
+    grid-area: 1 / 1 / 1 / 4;
+}
+    
+
 }    
