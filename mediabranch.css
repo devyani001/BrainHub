@@ -78,7 +78,7 @@
     }
     
     .box {
-        border: 1px solid none;
+        /* border: 1px solid none; */
         color: white;
         height: 300px;
         width: 300px;
