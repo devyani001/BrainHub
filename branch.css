@@ -11,7 +11,7 @@ body{
 }
 
 .container {
-    border: 2px solid red;
+    border: 2px solid none;
     height: 2000px;
     display: flex;
     /* flex-direction: column-reverse; */
@@ -24,7 +24,7 @@ justify-content: center;
 }
 
 .box {
-    border: 1px solid green;
+    border: 1px solid none;
     color: white;
     height: 300px;
     width: 300px;
