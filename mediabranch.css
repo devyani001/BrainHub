@@ -116,6 +116,11 @@
         box-shadow: 0 0 21px darkgray;
 
     }
+
+    .btn a{
+        text-decoration: none;
+        color: #fff;
+    }
     
    
 }
@@ -251,6 +256,11 @@
         padding: 12px 34px;
         margin: 50px 0 100px 0;
     }
+
+    .btn a{
+        text-decoration: none;
+        color: #fff;
+    }
    
 }
 
@@ -377,9 +387,12 @@
         margin: 100px 0 100px 0;
     }
 
-    
+    .btn a{
+        text-decoration: none;
+        color: #fff;
+    }
 
-    
+
 /* 3rd page vdo */
     
     video{
