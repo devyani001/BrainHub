@@ -69,7 +69,7 @@
     }
 
     .lang-margin {
-        list-style: none;
+        list-style: circle;
         margin-left: 20px;
     }
 
@@ -149,26 +149,37 @@
         /* background: transparent; */
     }
 
+    .syllabus {
+        border: 1px solid none;
+        /* height: 200px; */
+    }
+
     .index{
         color: yellow;
-        border: 1px solid none;
+        border: 1px solid green;
         font-size: 12px;
+        padding: 10px;
     }
 
     td{
         color: yellow;
         border: 2px solid none;
         font-size: 14px;
+        /* padding: 0; */
+    }
+
+    li{
+        /* padding: 0; */
     }
 
     .data {
         border: 2px solid none;
         margin: 0 10px 0 10px;
-
+        /* height: 200px; */
     }
 
     .lang-margin {
-        list-style: none;
+        list-style: circle;
         margin-left: 20px;
     }
 
@@ -252,12 +263,18 @@
         color: yellow;
         border: 1px solid none;
         font-size: 12px;
+        padding: 2px;
     }
 
     td{
         color: yellow;
         border: 2px solid none;
         font-size: 14px;
+        padding: 2px;
+    }
+
+    li{
+        padding: 2px;
     }
 
     .data {
@@ -267,7 +284,7 @@
     }
 
     .lang-margin {
-        list-style: none;
+        list-style: circle;
         margin-left: 20px;
     }
 
