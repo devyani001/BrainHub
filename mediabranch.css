@@ -89,7 +89,7 @@
     }
 
     .container_2 {
-        border: 2px solid blue;
+        border: 2px solid none;
         height: 1500px;
         display: flex;
         /* flex-direction: column-reverse; */
@@ -102,7 +102,7 @@
     }
     
     .box {
-        border: 1px solid yellow;
+        border: 1px solid none;
         color: yellow;
         height: 390px;
         width: 330px;
@@ -212,7 +212,7 @@
     }
 
     .container_2 {
-        border: 2px solid violet;
+        border: 2px solid none;
         height: 2000px;
         display: flex;
         /* flex-direction: column-reverse; */
@@ -225,7 +225,7 @@
     }
     
     .box {
-        border: 1px solid yellowgreen;
+        border: 1px solid none;
         color: yellow;
         height: 390px;
         width: 330px;
@@ -333,7 +333,7 @@
     }
 
     .container_2 {
-        border: 2px solid red;
+        border: 2px solid none;
         height: 2100px;
         display: flex;
         /* flex-direction: column-reverse; */
@@ -346,7 +346,7 @@
     }
     
     .box {
-        border: 1px solid green;
+        border: 1px solid none;
         color: yellow;
         height: 390px;
         width: 330px;
