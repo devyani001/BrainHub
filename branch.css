@@ -116,9 +116,28 @@ li{
 
 }
 
+.button {
+    color: #f44366;
+    text-align: center;
+    /* border: 1px solid wheat; */
+}
 
+.btn{
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 12px 34px;
+    margin-bottom: 150px;
+}
 
+.btn:hover{
+    border: 1px solid #f44366; 
+    background: #f44366;
+    transition: 1s; 
+    color: white;
+}
 
-
-
-
+a{
+    text-decoration: none;
+    color: #fff;
+}

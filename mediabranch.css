@@ -243,6 +243,14 @@
     video{
         border: 1px solid red;
     }
+
+    .btn{
+        color: #fff;
+        border: 1px solid #fff;
+        display: inline-block;
+        padding: 12px 34px;
+        margin: 50px 0 100px 0;
+    }
    
 }
 
@@ -359,6 +367,14 @@
         box-shadow: 10px 10px 0 0 grey;
         box-shadow: 0 0 21px darkgray;
 
+    }
+
+    .btn{
+        color: #fff;
+        border: 1px solid #fff;
+        display: inline-block;
+        padding: 12px 34px;
+        margin: 100px 0 100px 0;
     }
 
 /* 3rd page vdo */
