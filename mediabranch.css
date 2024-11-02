@@ -90,7 +90,7 @@
 
     .container_2 {
         border: 2px solid blue;
-        height: 2100px;
+        height: 1500px;
         display: flex;
         /* flex-direction: column-reverse; */
         flex-wrap: wrap;
@@ -213,7 +213,7 @@
 
     .container_2 {
         border: 2px solid violet;
-        height: 2100px;
+        height: 2000px;
         display: flex;
         /* flex-direction: column-reverse; */
         flex-wrap: wrap;
