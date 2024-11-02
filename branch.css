@@ -87,7 +87,7 @@ li{
 /* pdf section */
 
 .container {
-    border: 2px solid red;
+    border: 2px solid none;
     height: 1200px;
     display: flex;
     /* flex-direction: column-reverse; */
@@ -100,8 +100,8 @@ li{
 }
 
 .box {
-    border: 1px solid green;
-    color: white;
+    border: 1px solid none;
+    color: yellow;
     height: 390px;
     width: 330px;
     text-align: center;
@@ -109,7 +109,11 @@ li{
     padding-top: 20px;
 }
 
+.box:hover {
+    box-shadow: 10px 10px 0 0 grey;
+    box-shadow: 0 0 21px darkgray;
 
+}
 
 
 

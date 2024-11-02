@@ -75,7 +75,7 @@
 
     .container {
         border: 2px solid none;
-        height: 3300px;
+        height: 2100px;
         display: flex;
         /* flex-direction: column-reverse; */
         flex-wrap: wrap;
@@ -88,7 +88,7 @@
     
     .box {
         border: 1px solid none;
-        color: white;
+        color: yellow;
         height: 390px;
         width: 330px;
         text-align: center;
@@ -185,7 +185,7 @@
 
     .container {
         border: 2px solid none;
-        height: 3300px;
+        height: 3000px;
         display: flex;
         /* flex-direction: column-reverse; */
         flex-wrap: wrap;
@@ -198,7 +198,7 @@
     
     .box {
         border: 1px solid none;
-        color: white;
+        color: yellow;
         height: 390px;
         width: 330px;
         text-align: center;
@@ -212,6 +212,9 @@
 
     }
     
+    video{
+        border: 1px solid red;
+    }
    
 }
 
@@ -303,7 +306,7 @@
     
     .box {
         border: 1px solid none;
-        color: white;
+        color: yellow;
         height: 390px;
         width: 330px;
         text-align: center;
@@ -322,8 +325,9 @@
     video{
         height: 270px;
         width: 500px;
-        /* border: 1px solid salmon; */
-        margin: 70px 0 0 0px;
+        border: 1px solid salmon;
+        margin: 0;
+        padding: 0;
         
     }
     
