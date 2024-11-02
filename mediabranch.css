@@ -316,6 +316,16 @@
         box-shadow: 0 0 21px darkgray;
 
     }
+
+/* 3rd page vdo */
+    
+    video{
+        height: 270px;
+        width: 500px;
+        /* border: 1px solid salmon; */
+        /* margin: 70px 0 0 200px; */
+        
+    }
     
    
 }
