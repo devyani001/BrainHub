@@ -87,7 +87,7 @@ li{
 
 /* pdf section */
 
-.container {
+.container, .container_2 {
     border: 2px solid none;
     height: 1200px;
     display: flex;

@@ -87,9 +87,22 @@
         justify-content: center;
         align-content: space-evenly;
     }
+
+    .container_2 {
+        border: 2px solid blue;
+        height: 2100px;
+        display: flex;
+        /* flex-direction: column-reverse; */
+        flex-wrap: wrap;
+        row-gap: 0px;
+        /* column-gap: 20px; */
+        /* justify-content: space-around; */
+        justify-content: center;
+        align-content: space-evenly;
+    }
     
     .box {
-        border: 1px solid none;
+        border: 1px solid yellow;
         color: yellow;
         height: 390px;
         width: 330px;
@@ -194,12 +207,25 @@
         row-gap: 0px;
         /* column-gap: 20px; */
         /* justify-content: space-around; */
-    justify-content: center;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+
+    .container_2 {
+        border: 2px solid violet;
+        height: 2100px;
+        display: flex;
+        /* flex-direction: column-reverse; */
+        flex-wrap: wrap;
+        row-gap: 0px;
+        /* column-gap: 20px; */
+        /* justify-content: space-around; */
+        justify-content: center;
         align-content: space-evenly;
     }
     
     .box {
-        border: 1px solid none;
+        border: 1px solid yellowgreen;
         color: yellow;
         height: 390px;
         width: 330px;
@@ -302,12 +328,25 @@
         row-gap: 0px;
         /* column-gap: 20px; */
         /* justify-content: space-around; */
-    justify-content: center;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+
+    .container_2 {
+        border: 2px solid red;
+        height: 2000px;
+        display: flex;
+        /* flex-direction: column-reverse; */
+        flex-wrap: wrap;
+        row-gap: 0px;
+        /* column-gap: 20px; */
+        /* justify-content: space-around; */
+        justify-content: center;
         align-content: space-evenly;
     }
     
     .box {
-        border: 1px solid none;
+        border: 1px solid green;
         color: yellow;
         height: 390px;
         width: 330px;
