@@ -125,21 +125,6 @@ nav .fa{
     display: none;/*icon will be hidden for larger screen devices*/
 }
 
-
-/* ABOUT PAGE */
-
-.bg img{
-    /* background-image: url("https://ideogram.ai/assets/image/lossless/response/GGP1JCM1Q7quJOuLXyjmMw");
-    background-position: center;
-    background-size: cover; */
-    border: 2px solid rebeccapurple;
-    width: 100%;
-    height: 65vh;
-    position: absolute;
-}
-
-
-
 /* 2nd page */
 
 .hero-btn {
@@ -321,4 +306,11 @@ video{
 
 .footerbg{
     background-color:#0a1128
+}
+
+
+/* ABOUT US PAGE */
+
+.header-wall{
+    
 }
