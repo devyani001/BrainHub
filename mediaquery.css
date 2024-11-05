@@ -275,10 +275,10 @@ video {
 
 .owner-name{
     border: 3px solid none;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     color: darkgrey;
-    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .linkdin{
