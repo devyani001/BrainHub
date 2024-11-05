@@ -358,10 +358,13 @@ video{
  }
  
  .background {
-     margin-top: 30px;
-     padding-bottom: 0px;
-     font-family: "Unica One", sans-serif;
-     text-shadow: 0 0 5px #03f484, 0 0 25px #03f484, 0 0 50px #03f484, 0 0 100px #03f484;
+    margin-top: 30px;
+    padding-bottom: 0px;
+    font-family: "Unica One", sans-serif;
+    text-shadow: 0 0 5px #03f484, 0 0 25px #03f484, 0 0 50px #03f484, 0 0 100px #03f484;
+    color: white;
+    font-size: 18px;
+    word-spacing: 2px;
  }
  
 
