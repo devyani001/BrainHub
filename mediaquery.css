@@ -260,6 +260,7 @@ video {
     color: darkgrey;
     padding: 40px 0 30px 0;
     /* font-family: 'Times New Roman', Times, serif; */
+    font-family: "playfair Display";
 }
 
 .follow{
@@ -278,7 +279,9 @@ video {
     margin-top: 30px;
     text-align: center;
     color: darkgrey;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: "playfair Display";
+    font-size: 15px;
 }
 
 .linkdin{
