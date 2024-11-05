@@ -157,18 +157,99 @@
     
 }
 
-video{
+/* video{
     height: 135px;
     width: 250px;
-    /* border: 1px solid salmon; */
-    margin: 0 0 0 0;
-    
+    border: 1px solid salmon;
+    margin: 50px 0 0 0;
+    /* text-align: center; */
+    /* align-content: center; 
 }
+
+.bigbackground {
+    border: 1px solid red;
+    margin-top: 0;
+}
+
+.background {
+    border: 1px solid green;
+    margin: 15px;
+    /* margin-bottom: 500px; 
+} */
+
+
+
+/* 3rd page */
+
+.last-page {
+    background-image: url("f0f4eead-3616-462f-b3ae-0b1966110914.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 740px;
+    width: 100%;
+}
+
+video {
+    /* align-items: start; */
+    width: 100%;
+    height: 420px;
+    position: absolute;
+    left: 0;
+    border: 20x solid rebeccapurple;
+    top: 3450px;
+    margin-left: 0px;
+    /* margin: 20px; */
+    margin-top: 0;
+    /* padding-top: 50px;
+        padding-bottom: 100px;
+        margin-left: 0;
+        padding-left: 0; */
+}
+
+
+.smallbox {
+    border: 2px solid none;
+    width: 100%px;
+    height: 250px;
+    /* margin:20px; */
+}
+
+.footer {
+    height: 760px;
+    padding: 0px;
+}
+
+.bigbackground {
+    text-align: center;
+    margin-top: 100px;
+    position: absolute;
+    /* bottom: 500px; */
+    top: 2950px;
+}
+
+.background {
+    margin-top: 30px;
+    padding: 0 30px;
+    /* position: absolute; */
+    /* top: 3100px; */
+}
+
+#aboutus {
+
+    color: greenyellow;
+    margin-bottom: 00px;
+}
+
+#text {}
+
+
+
+
 
 /* FOOTER */
 
 .footerbg{
-    background-color: #86bae2;
+    background-color: #0d2436;
     height: 40vh;
 }
 
