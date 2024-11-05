@@ -3,41 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index pg</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mediaquery.css">
 </head>
 <body>
-    <section class="header">
-        <nav>
-            <div class="left-side">
-                
-                <img class="logo"
-                    src="BHlogo.png"
-                    alt="">
-                
-            </div>
     
+
+
+    <section class="sub-header" id="devyani" style="position: relative;">
+        <div class="aboutpage">
+            
+            <img src="https://ideogram.ai/assets/image/lossless/response/GGP1JCM1Q7quJOuLXyjmMw" alt="" style="position: relative; top:0;">
+            <h1 class="about_us" style="position:absolute; color:#fff; top:200px;left:250px; font-size:35px">ABOUT US</h1>
+            <!-- <img src="C:\Users\ASUS\OneDrive\Desktop\BrainHub\a-sleek-and-modern-3d-logo-design-for-brainhub-a-e-LM7ABsuPQm6KILy3z0Mdnw-ayNREGJJTEOPKI28-8FDuQ-removebg-preview.png" alt="" id="headl"> -->
+        </div>
+        <nav>       
+            <div class="left-side">
+                <a href="index.html"><img class="logo" src="BHlogo.png" alt="" style="position: absolute; top:0;"></a>
+            </div>
+       
+
             <div class="navbar" id="navlinks">
                 <ul class="content">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutpage.html">About</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li style="position: absolute; top: 10px; right:350px"><a href="index.html">Home</a></li>
+                    <li style="position: absolute; top: 10px; right:280px"><a href="aboutpage.html">About</a></li>
+                    <li style="position: absolute; top: 10px; right:190px"><a href="features.html">Features</a></li>
+                    <li style="position: absolute; top: 10px; right:110px"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-    
+              
             <a href="#">
-                <!-- <i class="fa-solid fa-xmark"></i> -->
-                <!-- <p class="burger" id="toggle">Burger</p> -->
-            <i class="fa-solid fa-bars" class="burger" id="toggle" style="color: transparent;"></i>
+            <i class="fa-solid fa-bars" class="burger" id="toggle" style="color: white;"></i>
             </a>
-        </nav>
-    
-        </section>
+        </nav> 
+    </section>
+
+<section style="background-color:#edf2fb;">
+    <section class="about-us">   
+        <div class="row">
+            <div class="about-col" id="left1">
+                <h1 style="padding-bottom: 20px; padding-top:50px">Our mission</h1> 
+                <p style="padding-bottom: 30px; padding-top:0px">Our mission is to support and empower students by providing
+                    them <br> with valuable resources that can help enhance their academic <br> performance. We believe that access to past question papers can <br>significantly improve a student's ability to understand the examination <br> pattern, manage time effectively, and identify key areas of focus.
+                </p>
+                <a href="#" class="hero-btn red-btn" style="color: red; border:1px solid red">EXPLORE NOW</a>
+            </div>
+            <div class="about-col" id="right1" style="padding-top:60px; border:2px solid none">
+                <img src="a-dark-and-moody-background-cover-image-set-in-a-m-zXIG6lGdTrSLK6YlRh3wRA-XkcFXfQWQmiGuumT8GO49Q.jpeg" alt="">
+            </div> 
+        </div>
+    </section>
+
+
+            <!-- footer -->
+
+
+            <div class="bigbackground">
+                <h4 class="background" id="aboutus" style="color: black">About Us</h4> 
+                <p class="background" id="text" style="color: black; padding-bottom:50px">
+                    BrainHub is your one-stop destination for accessing a vast repository of question papers from various semesters and courses.
+                    Designed to help <br>college students prepare better for their exams, our website offers a user-friendly interface that allows you to
+                    easily search and download past <br> question papers. Whether you're looking for last semester's finals or midterm papers from a
+                    few years ago, BrainHub <br> has got you covered.
+                </div>
+
+
+<!-- media query -->
+
+
+<style>
+    @media screen and (max-width: 479px) {
+
+        * {    
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .uprfooter {
+            
+            text-align: center;
+            left: 0;
+            margin: 0 25px 0 25px;
+            font-size: 15px;
+        }
+
+        #aboutuprfooter{
+            top: 1240px;
+        }
+
+        .follow {
+            border: 3px solid none;
+            
+            left: 98px;
+        }
+
+        .follow i{
+            
+            border: 2px solid none;
+            
+        }
+
+        .owner {
+            font-size: 14px;
+            left: 35px;
+        }
+
+        .devil-emoji {
+            left: 306px;
+        }
+
+        .logo {
+            left: 30px;
+            width: 80px;
+            height: 77px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #left1{
+            padding-left: 0px;
+            text-align: center;
+            font-size: 15px;
+            font-family: 'playfair display';
+        }
+
+        #right1{
+            padding: 0 18px  0 18px;
+        }
+
+        .bigbackground {
+            text-align: center;
+            /* margin-top: 10px; */
+            margin: 25px;
+            
+        }
+
+       .aboutpage img {
+            height: 250px;
+        }
+
+       .burger {
+        display: block;
+        color: white;
+        margin-right: 20px;
+    }
+
+    #toggle {
+        display: block;
+        
+        margin-right: 20px;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+
+    .navbar {
+        border: 2px solid none;
+        flex: 1;
+        align-self: start;
+        text-align: right;
+        background-color: #9aa5b1;
+        background-size: cover;
+        position: absolute;
+        height: 100vh;
+        font-size: 16px;
+        left: -500px;
+        padding: 20px 50px;
+        top: 100px;
+        width: 100%;
+        transition: 0.1s ease-in-out;
+    }
+
+    .navbar.active {
+        left: 0px;
+        z-index: 2;
+    }
+
+    .navbar ul li a {
+        color: red;
+        text-decoration: none;
+        /* display: none; */
+        /* background-color: wheat; */
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    li{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .content {
+        /* background-color: aliceblue; */
+    }
+
+    .burger {
+        display: block;
+        color: white;
+        margin-right: 20px;
+    }
+
+    .about_us{
+        position: absolute;
+        left: 100px;
+        color: red;
+    }
+
+    .about-col{
+        padding: 0 20px 0 20px;
+    }
+
     
 
 
+    }
+</style>
+
+
+
+
+<script class="imag" src="https://kit.fontawesome.com/8fdcd62239.js" crossorigin="anonymous"></script>
+
+
+
+
+
+        <!-- footer -->
+
+        <!-- <div class="footerbg">
+            <p class="doubt">Have any questions or need further assistance? Feel free to reach out to us through our contact page. We're here to help you make the most of our resources</p>
+            <div class="follow">
+                <i class="fa-brands fa-linkedin-in" id="linkdin"></i>
+                <i class="fa-brands fa-facebook-f" id="facebook"></i>
+                <i class="fa-brands fa-twitter" id="twitter"></i>
+                <i class="fa-brands fa-square-instagram" id="instagram"></i>    
+            </div>
+            <div class="owner-name"> 
+                <p class="owner">@BrainHub.com | 06 July 2024, 2.36.17 PM</p>
+                <img src="devilbrainhubemoji-removebg-preview.png" alt="" class="devil-emoji" style="width:20px">
+            </div>
+           
+        </div> -->
+
+
+
+
+        <script class="imag" src="https://kit.fontawesome.com/8fdcd62239.js" crossorigin="anonymous"></script> 
 
     <script class="imag" src="https://kit.fontawesome.com/8fdcd62239.js" crossorigin="anonymous"></script> 
     <script>
@@ -48,7 +268,7 @@
         })
 
     </script>
-
+    <script src="https://kit.fontawesome.com/8fdcd62239.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
