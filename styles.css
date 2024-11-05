@@ -76,7 +76,7 @@ nav{
 .navbar ul li {
     list-style: none;
     display: inline-block;
-    padding: 20px 12px;
+    padding: 30px 12px;
     position: relative;
     border: 2px solid none;
     
@@ -84,6 +84,7 @@ nav{
 
 .navbar ul li a {
     color: #fff; 
+    /* color: #60798e; */
     text-decoration: none; 
 }
 
@@ -92,6 +93,7 @@ nav{
     width: 0%;
     height: 2px;
     background: #f44336;
+    /* background: #03f484; */
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -320,6 +322,15 @@ video{
 
 /* 3rd page */
 
+.videobg{
+    /* width: 100%; */
+    height: 100vh;
+    background-image: url("vdobg.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
 .last-page{
     background-image: url("f0f4eead-3616-462f-b3ae-0b1966110914.jpg");
      background-size: cover;
@@ -333,10 +344,10 @@ video{
  video {
      width: 500px; 
      height:500px; 
-     padding-top:0px; 
+     /* padding-top:0px;  */
      padding-bottom:230px;
      margin-left: 210px;
-     margin-top: 50px;
+     margin-top: 70px;
  }
  
  .footer {
@@ -391,6 +402,7 @@ video{
 }
 
 .follow i{
+    cursor: pointer;
     padding: 0 16px;
     border: 1px solid none;
     /* border-radius: 50%; */
