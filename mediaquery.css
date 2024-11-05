@@ -251,15 +251,15 @@ video {
 
 .footerbg{
     background-color: #0d2436;
-    height: 35vh;
+    height: 33vh;
 }
 
 .doubt{
-    font-size: 18px; 
+    font-size: 16px; 
     text-align: center;
     color: darkgrey;
     padding: 40px 0 30px 0;
-    /* font-family: "playfair Display"; */
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .follow{
@@ -278,6 +278,7 @@ video {
     margin-top: 20px;
     text-align: center;
     color: darkgrey;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .linkdin{
