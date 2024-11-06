@@ -176,7 +176,7 @@
 
     .index{
         color: yellow;
-        border: 1px solid green;
+        border: 1px solid none;
         font-size: 12px;
         padding: 10px;
     }
