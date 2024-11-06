@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index pg</title>
+    <title>BrainHub_Features</title>
     <link rel="stylesheet" href="styles.css">
     <!-- <link rel="stylesheet" href="mediaquery.css"> -->
 </head>
@@ -16,9 +16,8 @@
 
         <div class="aboutpage">
             
-            <img src="about_us_wallpaper.jpeg" alt="" style="position: relative; top:0;">
+            <img src="a-3d-render-of-a-room-with-multiple-students-prepa-SP66o61HR8SY7sMFkrpK1Q-f67jdjDjQC6oBWsCZLt7sw.jpeg" alt="" style="position: relative; top:0;">
             <!-- <h1 class="about_us" style="position:absolute; color:#fff; top:200px;left:250px; font-size:35px">ABOUT US</h1> -->
-            <h1 class="about-us-text">ABOUT US</h1>
             <!-- <img src="C:\Users\ASUS\OneDrive\Desktop\BrainHub\a-sleek-and-modern-3d-logo-design-for-brainhub-a-e-LM7ABsuPQm6KILy3z0Mdnw-ayNREGJJTEOPKI28-8FDuQ-removebg-preview.png" alt="" id="headl"> -->
         </div>
 
@@ -51,23 +50,33 @@
     </section>
 
 
-    <section class="outer-about">
-        <section class="about-us">   
+    <section class="outer-about" style="background-color:#edf2fb;">
+        <section class="about-us" style="border: 1px solid none; margin-top:100px">   
             <div class="row">
-                <div class="about-col" id="left1">
-                    <h1 class="mission" id="mission-text" style="padding-bottom: 20px; padding-top:50px;color: #0d2436;">OUR MISSION</h1> 
-                    <p class="our-mission-line" style="padding-bottom: 30px; padding-top:0px; font-family:'Times New Roman', Times, serif">Our mission is to support and empower students by providing
-                        them with valuable resources that can help enhance their academic performance. We believe that access to past question papers can significantly improve a student's ability to understand the examination pattern, manage time effectively, and identify key areas of focus.
-                    </p>
-                    <a href="#" class="hero-btn red-btn" style="color: red; border:1px solid red">EXPLORE NOW</a>
+                <div class="about-col" id="left1" style="padding-top: 80px;">
+                    <img src="C:\Users\ASUS\OneDrive\Desktop\BrainHub\create-a-thumbnail-that-captures-the-essence-of-an-efzUtjI1TrelZlDCzmzFnA-AxFdaOZSTUqrErFq7j5hVw.jpeg" alt="">
                 </div>
-                <div class="about-col" id="right1" style="padding-top:60px; border:2px solid none">
-                    <img src="a-dark-and-moody-background-cover-image-set-in-a-m-zXIG6lGdTrSLK6YlRh3wRA-XkcFXfQWQmiGuumT8GO49Q.jpeg" alt="">
+                <div class="about-col" id="right1" style="padding-top: 30px">
+                    <h1 class="features" style="padding-bottom: 20px; padding-top:50px;padding-left:80px">FEATURES</h1> 
+                    <p class="text-features" style="padding-bottom: 30px; padding-top:0px; padding-left:80px"><span style="font-size: large; font-weight: 700;">Extensive Collection: </span><br> Access question papers from multiple semesters and courses. Our database is continuously updated to ensure you have the latest and most relevant materials.
+                        <br><br>
+                        <span style="font-size: large; font-weight: 700;">Easy Navigation: </span><br> Our user-friendly design ensures that you can find what you're looking for quickly and effortlessly. Use our search function or browse by course and semester.
+                        <br><br>
+                        <span style="font-size: large; font-weight: 700;">Free Downloads: </span><br> All question papers are available for free. Simply find the paper you need, click on the download link, and you're good to go.
+                        <br><br>
+                        <span style="font-size: large; font-weight: 700;">Responsive Design:</span><br> Our website is optimized for all devices, including desktops, tablets, and mobile phones, ensuring a seamless experience no matter how you access it.
+    
+                        <br><br>
+                    </p>
+                    <a href="#" class="hero-btn red-btn" style="color: red; border:1px solid red; margin-left:80px">EXPLORE NOW</a>
                 </div> 
             </div>
         </section>
-            <!-- <video controls src="video.mp4"></video> -->
+    </section>
+        
 
+
+    <!-- about-common line -->
             
             <div class="bigbackground">
                 <h4 class="background" id="aboutus" style="color: black; margin-top:50px">About Us</h4> 
@@ -78,7 +87,7 @@
                     few years ago, BrainHub <br> has got you covered.
             </div>
         </div>
-
+   
 <!-- footer -->
 
 <div class="footerbg">
@@ -249,7 +258,17 @@
             width: 100%;
         }
     
+
+         
+       /* 2nd page */
     
+
+       .about-us {
+        border: 1px solid none;
+        margin-top: 0;
+        
+        top: 200px;
+       }
          
     /* 2nd page */
     
@@ -260,7 +279,7 @@
     }
     
     .containerr {
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
     
     .left-side {
@@ -272,9 +291,6 @@
         font-family: "Almendra", serif;
     }
     
-    .logo {
-    
-    }
     
     .clg-image {
         width: 100%;
@@ -282,11 +298,27 @@
         /* grid-auto -rows: 220px;  */
     }
 
+    .about-us{
+        border:1px solid none;
+        margin-top: 500px;
+        top: 0;
+    }
+
+    .outer-about{
+        border: 1px solid red;
+        margin-top: 0;
+        padding-top: 0;
+       
+        
+        
+    }
+
    .row {
             border: 1px solid none;
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             margin-top: 0;
+            border: 1px solid green;
             padding-top: 0;
         }
 
@@ -298,7 +330,19 @@
         }
 
         #right1{
-            padding: 0 18px  0 18px;
+            padding: 0;
+        }
+
+        .features{
+            padding-top: 0;
+            margin-top: 0;
+            border: 1px solid none;
+        }
+
+        .text-features{
+            padding-top: 0;
+            margin-top: 0;
+            border: 1px solid none;
         }
 
         .bigbackground {
@@ -312,35 +356,21 @@
             height: 250px;
         }
 
-        #mission-text{
-            padding-top: 800px;
-            border:1px solid none;
-            margin-top: 0;
-        }
-
-        .outer-about{
-            border: 1px solid none;
-            margin-top: 0;
+        .about-col{
+            
+            top: 300px;
             padding-top: 0;
-            position: absolute;
-            top: 250px;
-        }
-
-        .about-us-text {
-            text-align: center;
-            position: absolute;
-            top: 150px;
-            left: 50px;
-            color: white;
-            font-size: 25px;
-        }
-
-        .our-mission-line{
+            margin-top: 0;
             border: 1px solid none;
-            margin: 0 10px;
-            padding-right: 0;
         }
-
+        
+h1{
+    padding-left: 0;
+    color: red;
+    border: 1px solid none;
+    padding-bottom: 200px;
+}
+        
 
         /* FOOTER */
 

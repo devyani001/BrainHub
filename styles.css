@@ -511,10 +511,3 @@ video{
     /* margin: 0 10px; */
     padding-right: 150px;
 }
-
-.about-footerbg {
-    background-image: url("Black and White Creative Profile Information LinkedIn Article Cover Image.jpg");
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-}
