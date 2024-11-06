@@ -71,12 +71,16 @@
     }
 
     .burger {
-        color: green;
+        /* color: green; */
+        color: #fff;
         margin-right: 20px;
     }
 
     #toggle {
+        border: 2px solid red;
+        color: #fff;
         display: block;
+        color: transparent;
     }
 
     .main-text p {
