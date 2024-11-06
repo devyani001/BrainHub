@@ -56,8 +56,8 @@
             <div class="row">
                 <div class="about-col" id="left1">
                     <h1 class="mission" id="mission-text" style="padding-bottom: 20px; padding-top:50px;color: #0d2436;">OUR MISSION</h1> 
-                    <p style="padding-bottom: 30px; padding-top:0px">Our mission is to support and empower students by providing
-                        them <br> with valuable resources that can help enhance their academic <br> performance. We believe that access to past question papers can <br>significantly improve a student's ability to understand the examination <br> pattern, manage time effectively, and identify key areas of focus.
+                    <p class="our-mission-line" style="padding-bottom: 30px; padding-top:0px">Our mission is to support and empower students by providing
+                        them with valuable resources that can help enhance their academic performance. We believe that access to past question papers can significantly improve a student's ability to understand the examination pattern, manage time effectively, and identify key areas of focus.
                     </p>
                     <a href="#" class="hero-btn red-btn" style="color: red; border:1px solid red">EXPLORE NOW</a>
                 </div>
@@ -68,10 +68,10 @@
         </section>
             <!-- <video controls src="video.mp4"></video> -->
 
-            <br><br><br>
+            
             <div class="bigbackground">
-                <h4 class="background" id="aboutus" style="color: black;">About Us</h4> 
-                <p class="background" id="text" style="color: black;">
+                <h4 class="background" id="aboutus" style="color: black; margin-top:50px">About Us</h4> 
+                <p class="background" id="text" style="color: black; margin-bottom:50px">
                     BrainHub is your one-stop destination for accessing a vast repository of question papers from various semesters and courses.
                     Designed to help <br>college students prepare better for their exams, our website offers a user-friendly interface that allows you to
                     easily search and download past <br> question papers. Whether you're looking for last semester's finals or midterm papers from a
@@ -79,7 +79,6 @@
             </div>
         </div>
 
-<br><br><br><br><br>
 
         <!-- footer -->
 
@@ -256,7 +255,7 @@
     }
 
    .row {
-    border: 1px solid red;
+            border: 1px solid none;
             display: flex;
             flex-direction: column;
             margin-top: 0;
@@ -287,12 +286,12 @@
 
         #mission-text{
             padding-top: 800px;
-            border:1px solid #0d2436;
+            border:1px solid none;
             margin-top: 0;
         }
 
         .outer-about{
-            border: 1px solid rebeccapurple;
+            border: 1px solid orangered;
             margin-top: 0;
             padding-top: 0;
             position: absolute;
@@ -306,6 +305,12 @@
             left: 50px;
             color: white;
             font-size: 25px;
+        }
+
+        .our-mission-line{
+            border: 1px solid none;
+            margin: 0 10px;
+            padding-right: 0;
         }
 
    

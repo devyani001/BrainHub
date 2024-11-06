@@ -493,7 +493,7 @@ video{
 
 .outer-about{
     background-color: #edf2fb;
-    margin-top: 130px;
+    margin-top: 120px;
 }
 
 .about-us-text {
@@ -504,4 +504,10 @@ video{
     font-size: 35px;
     color: white;
     text-shadow: 5px 7px 5px #001c32;
+}
+
+.our-mission-line{
+    border: 1px solid none;
+    /* margin: 0 10px; */
+    padding-right: 150px;
 }
