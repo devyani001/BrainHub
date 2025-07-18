@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chokokutai&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
     margin: 0;
@@ -10,14 +10,14 @@ body {
 }
 
 header{
-    border: 5px solid blue;
+    border: 5px solid none;
     height: 100vh;
 }
 
 nav {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red;
+    border: 1px solid none;
     justify-content: space-around;
     align-items: center;
 }
@@ -43,13 +43,13 @@ li {
 }
 
 .container {
-    border: 2px solid orange;
+    border: 2px solid none;
     text-align: center;
     /* height: 84vh; */
 }
 
 .landing-middle {
-    border: 1px solid silver;
+    border: 1px solid none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,14 +58,16 @@ li {
 
 h1 {
     color: #fff;
-    border: 1px solid pink;
+    border: 1px solid none;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 62px;
+    font-family: "Winky Rough", sans-serif;
+    font-weight: 500;
 }
 
 p {
     color: #fff;
-    border: 1px solid purple;
+    border: 1px solid none;
     margin-top: 0;
     /* font-size: 15px; */
     font-family: "Chokokutai", system-ui;
@@ -76,4 +78,3 @@ button {
     margin: 20px 0 0 0;
     font-family: "Chokokutai", system-ui;
 }
-
