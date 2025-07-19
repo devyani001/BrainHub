@@ -2,24 +2,98 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/1200x/6d/03/ee/6d03ee108cb59155de3cb74dd91bb730.jpg);
-    background-position: center;
-    background-size: cover;
-    /* color: #fff; */
 }
 
-h1{
+
+
+h1 {
     text-align: center;
     text-shadow: 3px 3px 0px white;
-    margin-top: 40px;
-    /* color: #fff; */
+    margin: 40px 0 0 0;
+    border: 1px solid none;
+    color: rgb(229, 229, 148);
+    color: #000;
 }
 
-.container{
-    border: 1px solid red;
-    margin: 100px 200px;
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/1200x/6d/03/ee/6d03ee108cb59155de3cb74dd91bb730.jpg);
+    /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/736x/59/22/67/592267106c522959f021de03e33bde7c.jpg); */
+    background-position: center;
+    background-size: cover;
+    border: 1px solid black;
 }
 
-h2{
+.year {
+    border: 1px solid none;
+    margin: 100px 100px 0 100px;
+    /* display: flex; */
+}
+
+p{
+    /* padding: 20px 30px; */
+    cursor: pointer;
     color: #fff;
+}
+
+p:hover{
+    background-color: #001f3f;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+}
+
+.back-btn {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 0 0;
+}
+
+
+.simple-gradient-btn {
+  padding: 10px 25px;
+  font-size: 16px;
+  color: #ffffff;
+  background: transparent;
+  border: 1.5px solid;
+  border-image: linear-gradient(90deg, #ff4b2b, #1f1f7a) 1;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.simple-gradient-btn:hover {
+  color: #ff4b2b;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/736x/59/22/67/592267106c522959f021de03e33bde7c.jpg);
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        padding: 8px 10px;
+    }
+
+    .year p {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    .back-btn a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .year {
+        border: 1px solid none;
+        margin: 100px 50px;
+    }
 }
