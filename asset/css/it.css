@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/1200x/6d/03/ee/6d03ee108cb59155de3cb74dd91bb730.jpg);
+    background-position: center;
+    background-size: cover;
+    /* color: #fff; */
+}
+
+h1{
+    text-align: center;
+    text-shadow: 3px 3px 0px white;
+    margin-top: 40px;
+    /* color: #fff; */
+}
+
+.container{
+    border: 1px solid red;
+    margin: 100px 200px;
+}
+
+h2{
+    
+}
