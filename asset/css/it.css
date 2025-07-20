@@ -8,18 +8,22 @@ body {
 
 h1 {
     text-align: center;
-    text-shadow: 3px 3px 0px white;
+    text-shadow: 3px 3px 0px orangered;
     margin: 40px 0 0 0;
     border: 1px solid none;
     color: rgb(229, 229, 148);
     color: #000;
 }
 
+h2{
+    color: pink
+}
+
 .container {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/1200x/6d/03/ee/6d03ee108cb59155de3cb74dd91bb730.jpg);
-    /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/736x/59/22/67/592267106c522959f021de03e33bde7c.jpg); */
+    /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/1200x/6d/03/ee/6d03ee108cb59155de3cb74dd91bb730.jpg); */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/736x/59/22/67/592267106c522959f021de03e33bde7c.jpg);
     background-position: center;
     background-size: cover;
     border: 1px solid black;
@@ -52,6 +56,10 @@ button {
     margin: 100px 0 0 0;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .simple-gradient-btn {
   padding: 10px 25px;
