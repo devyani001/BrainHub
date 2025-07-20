@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrainHub Auth</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", sans-serif;
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .auth-box {
+            background: #111;
+            border: 1px solid #2e2e2e;
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .auth-box h2 {
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .auth-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background: #222;
+            border: none;
+            border-radius: 6px;
+            color: white;
+        }
+
+        .auth-box button {
+            width: 100%;
+            padding: 10px;
+            background: #306BFF;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .auth-box .toggle-link {
+            font-size: 14px;
+            margin-top: 15px;
+            color: #ccc;
+        }
+
+        .auth-box .toggle-link a {
+            color: #468aff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="auth-box">
+        <h2 id="formTitle">Sign Up</h2>
+        <input type="text" id="username" placeholder="Username" />
+        <input type="email" id="email" placeholder="Email ID" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="handleAuth()">Create Account</button>
+        <p class="toggle-link">
+            Already have an account? <a href="#" onclick="toggleForm()">Login</a>
+        </p>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyATusYvNqkCd75smoUlv8H_yscSrlSY-wE",
+            authDomain: "brainhub-login.firebaseapp.com",
+            projectId: "brainhub-login",
+            storageBucket: "brainhub-login.firebasestorage.app",
+            messagingSenderId: "114965057385",
+            appId: "1:114965057385:web:0e96dd638d82ce861cf7f8"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        let isLogin = false;
+
+        window.toggleForm = function () {
+            isLogin = !isLogin;
+            document.getElementById("formTitle").textContent = isLogin ? "Login" : "Sign Up";
+            document.querySelector("button").textContent = isLogin ? "Login" : "Create Account";
+            document.getElementById("username").style.display = isLogin ? "none" : "block";
+            document.querySelector(".toggle-link").innerHTML = isLogin
+                ? `Don't have an account? <a href="#" onclick="toggleForm()">Sign up</a>`
+                : `Already have an account? <a href="#" onclick="toggleForm()">Login</a>`;
+        };
+
+        window.handleAuth = function () {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            if (isLogin) {
+                signInWithEmailAndPassword(auth, email, password)
+                    .then(userCred => {
+                        alert("Logged in as: " + userCred.user.email);
+                        window.location.href = "home.html"; // redirect to home
+                    })
+                    .catch(err => alert(err.message));
+            } else {
+                const username = document.getElementById("username").value;
+                if (!username) return alert("Enter a username");
+
+                createUserWithEmailAndPassword(auth, email, password)
+                    .then(userCred => {
+                        alert("Account created for: " + userCred.user.email);
+                        window.location.href = "home.html"; // redirect after signup
+                    })
+                    .catch(err => alert(err.message));
+            }
+        };
+
+    </script>
+</body>
+
+</html>
