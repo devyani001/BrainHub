@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BrainHub Auth</title>
+    <link rel="stylesheet" href="asset/css/style.css" />
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chokokutai&display=swap');
+
         body {
             margin: 0;
             padding: 0;
             font-family: "Segoe UI", sans-serif;
-            background-color: #000;
             color: white;
             display: flex;
             justify-content: center;
@@ -18,42 +20,56 @@
             height: 100vh;
         }
 
+        #formTitle{
+            color: red;
+        }
+
         .auth-box {
-            background: #111;
-            border: 1px solid #2e2e2e;
+            background: transparent;
+            backdrop-filter: blur(5px);
             border-radius: 10px;
-            padding: 30px;
+            padding: 50px;
             width: 100%;
             max-width: 350px;
             text-align: center;
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(83, 73, 73, 0.2);
         }
 
+
+        
         .auth-box h2 {
             margin-bottom: 20px;
             font-weight: 600;
+            font-family: "Chokokutai", system-ui;
         }
 
         .auth-box input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            background: #222;
+            background: transparent;
             border: none;
             border-radius: 6px;
             color: white;
+            font-family: "Chokokutai", system-ui;
+            box-sizing: border-box;
+            backdrop-filter: blur(10px);
+            border: 0.1px solid rgb(50, 48, 48);
         }
 
         .auth-box button {
             width: 100%;
             padding: 10px;
-            background: #306BFF;
+            background: transparent;
             color: white;
             font-weight: bold;
             border: none;
             border-radius: 6px;
             cursor: pointer;
             margin-top: 10px;
+            border: 1.5px solid;
+  border-image: linear-gradient(90deg, #ff4b2b, #1f1f7a) 1;
         }
 
         .auth-box .toggle-link {
@@ -67,6 +83,7 @@
             text-decoration: none;
             font-weight: 500;
         }
+
     </style>
 </head>
 
