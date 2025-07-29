@@ -3,20 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Information Technology</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>IT FY Question Papers 23-24</title>
     <style>
-        :root {
-            --dark-navy: #0a0a1a;
-            --medium-navy: #12122b;
-            --light-navy: #1a1a3a;
-            --bright-red: #ff2d2d;
-            --dark-red: #8a1a1a;
-            --accent-yellow: #ffcc00;
-            --text-light: #e0e0e0;
-            --text-lighter: #ffffff;
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -24,414 +12,214 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, var(--dark-navy), #00111a), 
-                        url("https://i.pinimg.com/736x/89/d0/27/89d0273183693fa492020a55fdc98936.jpg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: var(--text-light);
-            line-height: 1.6;
-            min-height: 100vh;
+            background-color: #000000;
+            color: #FFD700;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
         }
 
         h1 {
-            text-align: center;
-            margin: 40px 0 20px;
-            font-size: 2.8rem;
-            color: var(--text-lighter);
-            text-shadow: 3px 3px 0px var(--bright-red);
+            color: #FF0000;
+            font-size: 2em;
             letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            color: #FF0000;
         }
 
         h2 {
-            text-align: center;
-            color: var(--text-lighter);
-            margin: 60px 20px 30px;
-            font-size: 1.8rem;
-            font-weight: 500;
+            color: #FFFFFF;
+            font-size: 1.2em;
+            margin-bottom: 30px;
         }
 
         h3 {
-            text-align: center;
-            color: var(--bright-red);
-            margin: 0 20px 40px;
-            font-size: 1.5rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            color: #FF4C4C;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
         }
 
-        .syllabus {
-            display: flex;
-            justify-content: center;
-            margin: 0 auto 60px;
-            max-width: 1200px;
-            padding: 0 20px;
-        }
-
-        table.data {
+        table {
             width: 100%;
             border-collapse: collapse;
-            background-color: rgba(26, 26, 58, 0.9);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-            overflow: hidden;
+            margin-bottom: 30px;
+            font-size: 0.95em;
         }
 
-        table.data tr:first-child th {
-            background: linear-gradient(135deg, var(--dark-red), var(--bright-red));
-        }
-
-        table.data th {
-            padding: 16px;
-            text-align: center;
-            font-weight: 600;
-            color: var(--text-lighter);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-size: 1.1rem;
-        }
-
-        table.data td {
-            padding: 14px 16px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            color: var(--accent-yellow);
-            transition: all 0.3s ease;
-        }
-
-        table.data td.subject-col {
+        th, td {
+            border: 1px solid #444;
+            padding: 10px;
             text-align: left;
-            color: var(--text-light);
         }
 
-        table.data tr:hover td {
-            background-color: rgba(138, 26, 26, 0.2);
+        th {
+            color: #FF3333;
+            background-color: #111;
         }
 
-        table.data tr:nth-child(even) {
-            background-color: rgba(10, 10, 26, 0.3);
+        td a.download {
+            color: #1E90FF;
+            text-decoration: none;
+            font-size: 1.2em;
         }
 
-        li {
-            list-style-position: inside;
-            padding: 8px 0;
+        .grade {
+            color: #FF4444;
+            font-weight: bold;
+            text-align: center;
         }
 
-        .language {
-            list-style: none;
-            color: var(--bright-red);
-            font-weight: 600;
-            padding-left: 0;
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            color: #FFFFFF;
+            text-decoration: none;
+            border: 2px solid #FF0000;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
         }
 
-        .lang-margin {
-            list-style-type: circle;
-            margin-left: 40px;
-            color: var(--text-light);
+        .back-button:hover {
+            background: #FF0000;
+            color: #000000;
         }
 
-        .index-download a {
-            color: var(--text-light);
-            transition: all 0.3s ease;
-            font-size: 1.2rem;
-        }
+        @media (max-width: 768px) {
+            table, th, td {
+                font-size: 0.85em;
+            }
 
-        .index-download a:hover {
-            color: var(--bright-red);
-            transform: scale(1.2);
-        }
-
-        .back-btn {
-            display: flex;
-            justify-content: center;
-            margin: 60px 0 100px;
-        }
-
-        .simple-gradient-btn {
-            padding: 12px 30px;
-            font-size: 1rem;
-            color: var(--text-lighter);
-            background: transparent;
-            border: 1.5px solid;
-            border-image: linear-gradient(90deg, var(--bright-red), var(--medium-navy)) 1;
-            border-radius: 60px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 500;
-        }
-
-        .simple-gradient-btn:hover {
-            background: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 0 15px rgba(255, 45, 45, 0.3);
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 991px) {
             h1 {
-                font-size: 2.4rem;
+                font-size: 1.6em;
             }
-            
-            h2 {
-                font-size: 1.6rem;
-            }
-            
-            h3 {
-                font-size: 1.3rem;
-            }
-            
-            table.data th {
-                font-size: 1rem;
-                padding: 14px 10px;
-            }
-            
-            table.data td {
-                padding: 12px 10px;
-                font-size: 0.95rem;
-            }
-            
-            .lang-margin {
-                margin-left: 30px;
-            }
-        }
 
-        @media (max-width: 767px) {
-            h1 {
-                font-size: 2rem;
-                margin: 30px 0 15px;
-            }
-            
             h2 {
-                font-size: 1.4rem;
-                margin: 40px 15px 25px;
+                font-size: 1em;
             }
-            
-            h3 {
-                font-size: 1.2rem;
-                margin-bottom: 30px;
-            }
-            
-            table.data th {
-                font-size: 0.9rem;
-                padding: 12px 8px;
-            }
-            
-            table.data td {
-                padding: 10px 8px;
-                font-size: 0.9rem;
-            }
-            
-            .lang-margin {
-                margin-left: 20px;
-            }
-            
-            .simple-gradient-btn {
-                padding: 10px 25px;
-                font-size: 0.9rem;
-            }
-        }
 
-        @media (max-width: 479px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            h2 {
-                font-size: 1.3rem;
-            }
-            
             h3 {
-                font-size: 1.1rem;
-            }
-            
-            table.data th {
-                font-size: 0.8rem;
-                padding: 10px 6px;
-            }
-            
-            table.data td {
-                padding: 8px 6px;
-                font-size: 0.85rem;
-            }
-            
-            li {
-                padding: 6px 0;
-            }
-            
-            .lang-margin {
-                margin-left: 15px;
+                font-size: 1.1em;
             }
         }
     </style>
 </head>
-
 <body>
-    <h1>INFORMATION TECHNOLOGY</h1>
-    <h2>First Year Question Papers 23-24</h2>
-    <h3>SEMESTER - I</h3>
+    <div class="container">
+        <h1>INFORMATION <span>TECHNOLOGY</span></h1>
+        <h2>First Year Question Papers<br>23-24</h2>
 
-    <div class="syllabus">
-        <table class="data">
+        <h3>SEMESTER - I</h3>
+        <table>
             <tr>
                 <th>SUBJECTS</th>
                 <th>MID-SEM</th>
                 <th>END-SEM</th>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Introduction to Statistics, Probability and Calculus</li>
-                </td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1eq9HMz4u5hBD7_UErBavA7InFiMUQsIo"><i class="fas fa-download"></i></a></td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1OIAH-D3ZGWuen_owYZA-Ny3r524Rv9ES"><i class="fas fa-download"></i></a></td>
+                <td>Introduction to Statistics, Probability and Calculus</td>
+                <td><a href="#" class="download">⬇</a></td>
+                <td><a href="#" class="download">⬇</a></td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Chemistry for Engineers</li>
-                </td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1REG-utpMfABSK1An5xsTB2Hny5N3kWX2"><i class="fas fa-download"></i></a></td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1Fp_hXJBd9KKzFgFLM2YuQlJgeS0PeGlp"><i class="fas fa-download"></i></a></td>
+                <td>Chemistry for Engineers</td>
+                <td><a href="#" class="download">⬇</a></td>
+                <td><a href="#" class="download">⬇</a></td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Introduction to Electrical Engineering</li>
-                </td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1C1tNzjYsOilNrXbrhgsSZXzEZd4rdtZG"><i class="fas fa-download"></i></a></td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id="><i class="fas fa-download"></i></a></td>
+                <td>Introduction to Electrical Engineering</td>
+                <td><a href="#" class="download">⬇</a></td>
+                <td><a href="#" class="download">⬇</a></td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li class="language">Language</li>
-                </td>
-                <td></td>
-                <td></td>
+                <td colspan="3">Language</td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li class="lang-margin">Professional English Communication</li>
-                </td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id="><i class="fas fa-download"></i></a></td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1SLbEy4-3P7qZB2voGkzUXVIqooTkWqlp"><i class="fas fa-download"></i></a></td>
+                <td>○ Professional English Communication</td>
+                <td><a href="#" class="download">⬇</a></td>
+                <td><a href="#" class="download">⬇</a></td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li class="lang-margin">German</li>
-                </td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1Wajdfw5E18Or4WFqmX4n9Ucv1qCXtdwW"><i class="fas fa-download"></i></a></td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1dq7k23vJCi0ihLdWGzNrcII34Fz7kfv9"><i class="fas fa-download"></i></a></td>
+                <td>○ German</td>
+                <td><a href="#" class="download">⬇</a></td>
+                <td><a href="#" class="download">⬇</a></td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li class="lang-margin">Japanese</li>
-                </td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1-vkmvGjOulXbs71ttKH-bvSc_z1GLTf0"><i class="fas fa-download"></i></a></td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1Qo2aOMrLiIzYo58gKORe13DugzHr4gSR"><i class="fas fa-download"></i></a></td>
+                <td>○ Japanese</td>
+                <td><a href="#" class="download">⬇</a></td>
+                <td><a href="#" class="download">⬇</a></td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Fundamentals of Computer Programming</li>
-                </td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1lNRt-Kf8GteW8rdtBbdEOiCbQofcQ4gE"><i class="fas fa-download"></i></a></td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=12gYE1FjH-IvPQYSTUucHl7AOuBfaY_2o"><i class="fas fa-download"></i></a></td>
+                <td>Fundamentals of Computer Programming</td>
+                <td><a href="#" class="download">⬇</a></td>
+                <td><a href="#" class="download">⬇</a></td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Introduction to Engineering and Engineering Products</li>
-                </td>
-                <td>GRADE</td>
-                <td>GRADE</td>
+                <td>Introduction to Engineering and Engineering Products</td>
+                <td class="grade">GRADE</td>
+                <td class="grade">GRADE</td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Science of Learning</li>
-                </td>
-                <td>GRADE</td>
-                <td>GRADE</td>
+                <td>Science of Learning</td>
+                <td class="grade">GRADE</td>
+                <td class="grade">GRADE</td>
             </tr>
         </table>
-    </div>
 
-    <h3 style="margin-top: 40px;">SEMESTER - II</h3>
-
-    <div class="syllabus">
-        <table class="data">
+        <h3>SEMESTER - II</h3>
+        <table>
             <tr>
                 <th>SUBJECTS</th>
                 <th>MID-SEM</th>
                 <th>END-SEM</th>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Statistical Method</li>
-                </td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1sdrd6K4pzfDPd97rDoRISZxnSLdwzhbo"><i class="fas fa-download"></i></a></td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1Id3LuVoWwkcFp9uetUFTE9Ib6sG4O_So"><i class="fas fa-download"></i></a></td>
+                <td>Statistical Method</td>
+                <td><a href="#" class="download">⬇</a></td>
+                <td><a href="#" class="download">⬇</a></td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Physics for Engineers</li>
-                </td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1WpLS80mq0BxFepsSBOqaPy6drmqsLAZh"><i class="fas fa-download"></i></a></td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1SW_iUHCTaaK2LmoNlFnfbwL-7HpSIH92"><i class="fas fa-download"></i></a></td>
+                <td>Physics for Engineers</td>
+                <td><a href="#" class="download">⬇</a></td>
+                <td><a href="#" class="download">⬇</a></td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Basic Electronics Engineering</li>
-                </td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=186HF19tO3acthqn1JPS3mgYaYno9WgT3"><i class="fas fa-download"></i></a></td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1m3oismGRwtdcEGCk_JVQRaFUm_hZB1U_"><i class="fas fa-download"></i></a></td>
+                <td>Basic Electronics Engineering</td>
+                <td><a href="#" class="download">⬇</a></td>
+                <td><a href="#" class="download">⬇</a></td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Discrete Mathematics</li>
-                </td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1PRI3Z6ovecNA9hhJ54_2pslkP99dVeRt"><i class="fas fa-download"></i></a></td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1PcN0IwweS-69Ip3q6p-m6yHy_vlfqvst"><i class="fas fa-download"></i></a></td>
+                <td>Descrete Mathematics</td>
+                <td><a href="#" class="download">⬇</a></td>
+                <td><a href="#" class="download">⬇</a></td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Object Oriented Programming System</li>
-                </td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1U9RtneL-jeaNLAZWlUjIivvno8uRkwsA"><i class="fas fa-download"></i></a></td>
-                <td class="index-download"><a href="https://drive.google.com/uc?export=download&id=1szY85gsjp_1_KlGan0rS6gQIGRMV4k3l"><i class="fas fa-download"></i></a></td>
+                <td>Object Oriented Programming System</td>
+                <td><a href="#" class="download">⬇</a></td>
+                <td><a href="#" class="download">⬇</a></td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Product Visualization</li>
-                </td>
-                <td>GRADE</td>
-                <td>GRADE</td>
+                <td>Product Visualization</td>
+                <td class="grade">GRADE</td>
+                <td class="grade">GRADE</td>
             </tr>
-
             <tr>
-                <td class="subject-col">
-                    <li>Indian Knowledge System</li>
-                </td>
-                <td>GRADE</td>
-                <td>GRADE</td>
+                <td>Indian Knowledge System</td>
+                <td class="grade">GRADE</td>
+                <td class="grade">GRADE</td>
             </tr>
         </table>
-    </div>
 
-    <div class="back-btn">
-        <a href="../fy.html"><button class="simple-gradient-btn">Back to Home</button></a>
+        <a href="#" class="back-button">Back to Home</a>
     </div>
 </body>
 </html>
