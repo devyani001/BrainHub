@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Theme Table</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #0b0f1a, #111729);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin: 0 0 10px;
+    }
+
+    h1 {
+      color: #ff3c3c;
+      font-size: 2rem;
+    }
+
+    h2 {
+      color: #ccc;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .table-container {
+      width: 100%;
+      max-width: 800px;
+      overflow-x: auto;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(255, 60, 60, 0.2);
+      border: 1px solid rgba(255, 60, 60, 0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background-color: #1a1f2e;
+    }
+
+    th, td {
+      padding: 16px 20px;
+      text-align: left;
+    }
+
+    th {
+      color: #ff3c3c;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #ff3c3c55;
+    }
+
+    td {
+      color: #eee;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    tr:hover {
+      background-color: #1c2233;
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Academic Report</h1>
+  <h2>Mid Semester and End Semester Performance</h2>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Midsem</th>
+          <th>Endsem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data Structures</td>
+          <td>27 / 30</td>
+          <td>42 / 50</td>
+        </tr>
+        <tr>
+          <td>DBMS</td>
+          <td>25 / 30</td>
+          <td>45 / 50</td>
+        </tr>
+        <tr>
+          <td>OOP with Python</td>
+          <td>28 / 30</td>
+          <td>46 / 50</td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
