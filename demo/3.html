@@ -1,225 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT FY Question Papers 23-24</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainHub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chokokutai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:wght@500&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            background-color: #000000;
-            color: #FFD700;
-            font-family: 'Segoe UI', sans-serif;
-            padding: 20px;
-        }
+    body {
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("https://i.pinimg.com/1200x/f4/51/45/f45145188ba6bdf368f43e812e44c4f2.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: sans-serif;
+    }
 
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            text-align: center;
-        }
+    header {
+      height: 100vh;
+    }
 
-        h1 {
-            color: #FF0000;
-            font-size: 2em;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-        }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+    }
 
-        h1 span {
-            color: #FF0000;
-        }
+    .logo img {
+      height: 120px;
+      width: 170px;
+    }
 
-        h2 {
-            color: #FFFFFF;
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
+    ul {
+      display: flex;
+      list-style: none;
+    }
 
-        h3 {
-            color: #FF4C4C;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
+    li {
+      padding: 10px 20px;
+      color: white;
+      margin: 0 15px;
+      cursor: pointer;
+    }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 30px;
-            font-size: 0.95em;
-        }
+    .container {
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      width: 100%;
+      min-height: 100vh;
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("https://wallpaperaccess.com/full/4230797.jpg");
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
 
-        th, td {
-            border: 1px solid #444;
-            padding: 10px;
-            text-align: left;
-        }
+    .landing-middle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 150px;
+    }
 
-        th {
-            color: #FF3333;
-            background-color: #111;
-        }
+    h1 {
+      color: white;
+      font-size: 62px;
+      font-family: "Winky Rough", sans-serif;
+    }
 
-        td a.download {
-            color: #1E90FF;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
+    p {
+      color: white;
+      font-family: "Chokokutai", cursive;
+    }
 
-        .grade {
-            color: #FF4444;
-            font-weight: bold;
-            text-align: center;
-        }
+    .login-box form a {
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px;
+      color: rgb(229, 9, 20);
+      font-size: 14px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: 0.5s;
+      margin-top: 40px;
+      letter-spacing: 2px;
+      font-family: "Chokokutai", system-ui;
+    }
 
-        .back-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
-            color: #FFFFFF;
-            text-decoration: none;
-            border: 2px solid #FF0000;
-            border-radius: 5px;
-            transition: background 0.3s, color 0.3s;
-        }
+    .login-box a:hover {
+      background: rgb(229, 9, 20);
+      color: #000;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgb(229, 9, 20), 0 0 25px rgb(229, 9, 20), 0 0 50px rgb(229, 9, 20), 0 0 100px rgb(229, 9, 20);
+    }
 
-        .back-button:hover {
-            background: #FF0000;
-            color: #000000;
-        }
+    .login-box a span {
+      position: absolute;
+      display: block;
+    }
 
-        @media (max-width: 768px) {
-            table, th, td {
-                font-size: 0.85em;
-            }
+    .login-box a span:nth-child(1) {
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgb(229, 9, 20));
+      animation: btn-anim1 1s linear infinite;
+    }
 
-            h1 {
-                font-size: 1.6em;
-            }
+    .login-box a span:nth-child(2) {
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, rgb(229, 9, 20));
+      animation: btn-anim2 1s linear infinite;
+      animation-delay: 0.25s;
+    }
 
-            h2 {
-                font-size: 1em;
-            }
+    .login-box a span:nth-child(3) {
+      bottom: 0;
+      right: 100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, rgb(229, 9, 20));
+      animation: btn-anim3 1s linear infinite;
+      animation-delay: 0.5s;
+    }
 
-            h3 {
-                font-size: 1.1em;
-            }
-        }
-    </style>
+    .login-box a span:nth-child(4) {
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, rgb(229, 9, 20));
+      animation: btn-anim4 1s linear infinite;
+      animation-delay: 0.75s;
+    }
+
+    @keyframes btn-anim1 { 0% { left: -100%; } 50%,100% { left: 100%; } }
+    @keyframes btn-anim2 { 0% { top: -100%; } 50%,100% { top: 100%; } }
+    @keyframes btn-anim3 { 0% { right: -100%; } 50%,100% { right: 100%; } }
+    @keyframes btn-anim4 { 0% { bottom: -100%; } 50%,100% { bottom: 100%; } }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      background: transparent;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border: 2px solid white;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    button a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .left-text {
+      flex-basis: 30%;
+      padding-top: 200px;
+      color: white;
+      text-align: center;
+    }
+
+    .heading {
+      font-size: 3rem;
+    }
+
+    .subheading {
+      margin-top: 10px;
+      font-family: "Sriracha", cursive;
+      font-size: 18px;
+    }
+
+    .gallary {
+      flex-basis: 50%;
+      display: grid;
+      margin-top: 70px;
+      gap: 8px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 120px;
+    }
+
+    .box {
+      background-size: cover;
+      background-position: top;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #222;
+      background-blend-mode: hard-light;
+      transition: all 1s ease-in-out;
+      cursor: pointer;
+    }
+
+    .box:hover {
+      background-color: #999;
+      background-position: center;
+      box-shadow: 0 0 4px #fff;
+    }
+
+    .row { grid-row: span 2; }
+    .col { grid-column: span 2; }
+    #box-8 { grid-area: 3 / 3 / 5 / 4; }
+
+    @media screen and (max-width: 479px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .gallary {
+        width: 100%;
+        padding-inline: 12px;
+        grid-auto-rows: 190px;
+      }
+
+      .box {
+        grid-row: span 1;
+        grid-column: span 3;
+      }
+
+      #box-8 {
+        grid-area: 1 / 1 / 1 / 4;
+      }
+
+      .subheading {
+        font-size: 16px;
+        font-family: "Almendra", serif;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>INFORMATION <span>TECHNOLOGY</span></h1>
-        <h2>First Year Question Papers<br>23-24</h2>
-
-        <h3>SEMESTER - I</h3>
-        <table>
-            <tr>
-                <th>SUBJECTS</th>
-                <th>MID-SEM</th>
-                <th>END-SEM</th>
-            </tr>
-            <tr>
-                <td>Introduction to Statistics, Probability and Calculus</td>
-                <td><a href="#" class="download">⬇</a></td>
-                <td><a href="#" class="download">⬇</a></td>
-            </tr>
-            <tr>
-                <td>Chemistry for Engineers</td>
-                <td><a href="#" class="download">⬇</a></td>
-                <td><a href="#" class="download">⬇</a></td>
-            </tr>
-            <tr>
-                <td>Introduction to Electrical Engineering</td>
-                <td><a href="#" class="download">⬇</a></td>
-                <td><a href="#" class="download">⬇</a></td>
-            </tr>
-            <tr>
-                <td colspan="3">Language</td>
-            </tr>
-            <tr>
-                <td>○ Professional English Communication</td>
-                <td><a href="#" class="download">⬇</a></td>
-                <td><a href="#" class="download">⬇</a></td>
-            </tr>
-            <tr>
-                <td>○ German</td>
-                <td><a href="#" class="download">⬇</a></td>
-                <td><a href="#" class="download">⬇</a></td>
-            </tr>
-            <tr>
-                <td>○ Japanese</td>
-                <td><a href="#" class="download">⬇</a></td>
-                <td><a href="#" class="download">⬇</a></td>
-            </tr>
-            <tr>
-                <td>Fundamentals of Computer Programming</td>
-                <td><a href="#" class="download">⬇</a></td>
-                <td><a href="#" class="download">⬇</a></td>
-            </tr>
-            <tr>
-                <td>Introduction to Engineering and Engineering Products</td>
-                <td class="grade">GRADE</td>
-                <td class="grade">GRADE</td>
-            </tr>
-            <tr>
-                <td>Science of Learning</td>
-                <td class="grade">GRADE</td>
-                <td class="grade">GRADE</td>
-            </tr>
-        </table>
-
-        <h3>SEMESTER - II</h3>
-        <table>
-            <tr>
-                <th>SUBJECTS</th>
-                <th>MID-SEM</th>
-                <th>END-SEM</th>
-            </tr>
-            <tr>
-                <td>Statistical Method</td>
-                <td><a href="#" class="download">⬇</a></td>
-                <td><a href="#" class="download">⬇</a></td>
-            </tr>
-            <tr>
-                <td>Physics for Engineers</td>
-                <td><a href="#" class="download">⬇</a></td>
-                <td><a href="#" class="download">⬇</a></td>
-            </tr>
-            <tr>
-                <td>Basic Electronics Engineering</td>
-                <td><a href="#" class="download">⬇</a></td>
-                <td><a href="#" class="download">⬇</a></td>
-            </tr>
-            <tr>
-                <td>Descrete Mathematics</td>
-                <td><a href="#" class="download">⬇</a></td>
-                <td><a href="#" class="download">⬇</a></td>
-            </tr>
-            <tr>
-                <td>Object Oriented Programming System</td>
-                <td><a href="#" class="download">⬇</a></td>
-                <td><a href="#" class="download">⬇</a></td>
-            </tr>
-            <tr>
-                <td>Product Visualization</td>
-                <td class="grade">GRADE</td>
-                <td class="grade">GRADE</td>
-            </tr>
-            <tr>
-                <td>Indian Knowledge System</td>
-                <td class="grade">GRADE</td>
-                <td class="grade">GRADE</td>
-            </tr>
-        </table>
-
-        <a href="#" class="back-button">Back to Home</a>
+  
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar scroll</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Link</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
+  </div>
+</nav>
+
+  <div class="container" id="scroll">
+    <div class="left-text">
+      <h1 class="heading"><span style="color:orange;">F.</span><span>Y.</span><span style="color: green;">BTech</span></h1>
+      <p class="subheading">BrainHub - your study companion. <br><span style="color: rgb(10, 174, 174);">Crafted by an engineering student for future engineers!</span></p>
+      <img src="BrainHub (2).png" alt="FY Logo" style="margin-top: 50px; height:200px;width:200px">
+    </div>
+
+    <div class="gallary">
+      <div class="box row" style="background-image: url(https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?q=80);"><button onclick="location.href='cse.html'">COMPUTER SCIENCE <br>AND <br> ENGINEERING</button></div>
+      <div class="box col" style="background-image: url(https://image.slidesdocs.com/responsive-images/background/electronic-circuit-board-in-dark-powerpoint-background_3d83d70b0c__960_540.jpg);"><button onclick="location.href='entc.html'">ELECTRONICS & TELECOMMUNICATION ENGINEERING</button></div>
+      <div class="box" style="background-image: url(https://www.sydney.edu.au/content/dam/.../heroimage-engineering.jpg);"><button onclick="location.href='mech.html'">MECHANICAL <br> ENGINEERING</button></div>
+      <div class="box" style="background-image: url(https://tse3.mm.bing.net/th?id=OIP.ZHe2_aKem2DL5HlJclCK6QHaE7);"><button onclick="location.href='electric.html'">ELECTRICAL <br>ENGINEERING</button></div>
+      <div class="box" style="background-image: url(https://wallpaperaccess.com/full/1615863.jpg);"><button onclick="location.href='civil.html'">CIVIL <br>ENGINEERING</button></div>
+      <div class="box" style="background-image: url(https://i.pinimg.com/236x/2c/fe/5c/2cfe5c5d155cb4737263579f74eef5f0.jpg);"><button onclick="location.href='it.html'">INFORMATION <br> TECHNOLOGY</button></div>
+      <div class="box col" style="background-image: url(https://tse4.mm.bing.net/th?id=OIP.PCqvNE8DB1qNzu6icGR9EAHaDt);"><button onclick="location.href='csbs.html'">COMPUTER SCIENCE & BUSINESS SYSTEM</button></div>
+      <div class="box" id="box-8" style="background-image: url(https://plus.unsplash.com/premium_photo-1683120963435-6f9355d4a776);"><button onclick="location.href='ar.html'">ARTIFICIAL INTELLIGENCE <br> & <br> ROBOTICS</button></div>
+    </div>
+  </div>
+
+  <button><a href="Branches/IT/it.html">IT Branch</a></button>
 </body>
 </html>
