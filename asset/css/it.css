@@ -34,7 +34,7 @@ h2{
     margin: 100px 100px 0 100px;
     /* display: flex; */
         font-family: 'Courier New', Courier, monospace;
-
+    font-weight: 800;
 }
 
 p{
@@ -51,6 +51,7 @@ button {
     cursor: pointer;
     text-align: center;
         font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
     letter-spacing: 2px;
 }
 
