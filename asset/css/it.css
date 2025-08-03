@@ -14,7 +14,7 @@ h1 {
     color: #000;
 }
 
-h2{
+h2 {
     color: rgb(50, 152, 241);
     /* color: orangered; */
 }
@@ -33,25 +33,25 @@ h2{
     border: 1px solid none;
     margin: 100px 100px 0 100px;
     /* display: flex; */
-        font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
 }
 
-p{
+p {
     /* padding: 20px 30px; */
     cursor: pointer;
     color: #fff;
 }
 
-p:hover{
+p:hover {
     background-color: #001f3f;
 }
 
 button {
     cursor: pointer;
     text-align: center;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
     letter-spacing: 2px;
 }
 
@@ -59,39 +59,79 @@ button {
     display: flex;
     justify-content: center;
     margin: 100px 0 0 0;
-    
+
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
-    
+
 }
 
-#back-btn{
+#back-btn {
     color: #f46565;
 }
 
-#back-btn:hover{
+#back-btn:hover {
     color: #fff;
 }
 
 .simple-gradient-btn {
-  padding: 10px 25px;
-  font-size: 16px;
-  color: #ffffff;
-  background: transparent;
-  border: 1.5px solid;
-  border-image: linear-gradient(90deg, #f46565, #1f1f7a) 1;
-  border-radius: 60px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #ffffff;
+    background: transparent;
+    border: 1.5px solid;
+    border-image: linear-gradient(90deg, #f46565, #1f1f7a) 1;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .simple-gradient-btn:hover {
-  color: #f46565;
-  background-color: rgba(255, 255, 255, 0.05);
+    color: #f46565;
+    background-color: rgba(255, 255, 255, 0.05);
 }
+
+/*alert message*/
+.slider-container {
+    width: 100%;
+    background-color: #f4656513;
+    /* dark background */
+    color: white;
+    overflow: hidden;
+    margin: 50px 0 50px 0;
+    border-top: 0.1px solid #ddc2c222;
+    border-bottom: 0.1px solid #ddc2c216;
+    padding: 7px 0;
+    position: relative;
+}
+
+.notice {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: scroll-left 22s linear infinite;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+strong {
+    color: #df8c8c;
+
+}
+
+
 
 
 @media (max-width: 600px) {
