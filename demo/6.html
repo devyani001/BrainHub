@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moving Notice Bar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .notice-strip {
+      background-color: #f8d7da;
+      color: #721c24;
+      padding: 10px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+
+    .notice-content {
+      display: inline-block;
+      padding-left: 100%;
+      animation: slide-left 15s linear infinite;
+      font-size: 16px;
+    }
+
+    @keyframes slide-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .fa-download {
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="notice-strip">
+  <div class="notice-content">
+    <strong>Note:</strong> Question papers are available <strong>only for subjects with 
+    (<i class="fa-solid fa-download" style="color: blue;"></i>) blue download icons.</strong>
+  </div>
+</div>
+
+</body>
+</html>

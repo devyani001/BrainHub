@@ -17,10 +17,11 @@
     <h1>INFORMATION TECHNOLOGY</h1>
 
     <h2>First Year Question Papers 23-24</h2>
-    <div class="notice">
-        <strong>Note:</strong> Question papers are available <strong>only for subjects with (<i
-                class="fa-solid fa-download" style="color: blue;"></i>) blue download icons.</strong>
-
+    <div class="slider-container">
+        <div class="notice">
+            <strong>Note:</strong> Question papers are available
+            <strong>only for subjects with (<i class="fa-solid fa-download"></i>) blue download icons.</strong>
+        </div>
     </div>
 
 
@@ -130,16 +131,16 @@
                 <td>
                     <li>Intorduction to Engineering and Engineering Products</li>
                 </td>
-                <td class="index-download index">GRADE<!--i class="fa-solid fa-download"></i--></td>
-                <td class="index-download index">GRADE<!--i class="fa-solid fa-download"></i--></td>
+                <td class="index-download index grade">GRADE<!--i class="fa-solid fa-download"></i--></td>
+                <td class="index-download index grade">GRADE<!--i class="fa-solid fa-download"></i--></td>
             </tr>
 
             <tr>
                 <td>
                     <li>Science of Learning</li>
                 </td>
-                <td class="index-download index">GRADE<!--i class="fa-solid fa-download"></i--></td>
-                <td class="index-download index">GRADE<!--i class="fa-solid fa-download"></i--></td>
+                <td class="index-download index grade">GRADE<!--i class="fa-solid fa-download"></i--></td>
+                <td class="index-download index grade">GRADE<!--i class="fa-solid fa-download"></i--></td>
             </tr>
 
         </table>
@@ -225,16 +226,16 @@
                     <td>
                         <li></i>Product Visualization</li>
                     </td>
-                    <td class="index-download index">GRADE<!--i class="fa-solid fa-download"></i--></td>
-                    <td class="index-download index">GRADE<!--i class="fa-solid fa-download"></i--></td>
+                    <td class="index-download index grade">GRADE<!--i class="fa-solid fa-download"></i--></td>
+                    <td class="index-download index grade">GRADE<!--i class="fa-solid fa-download"></i--></td>
                 </tr>
 
                 <tr>
                     <td>
                         <li>Indian Knowledge System</li>
                     </td>
-                    <td class="index-download index">GRADE<!--i class="fa-solid fa-download"></i--></td>
-                    <td class="index-download index">GRADE<!--i class="fa-solid fa-download"></i--></td>
+                    <td class="index-download index grade">GRADE<!--i class="fa-solid fa-download"></i--></td>
+                    <td class="index-download index grade">GRADE<!--i class="fa-solid fa-download"></i--></td>
                 </tr>
 
             </table>
@@ -247,6 +248,9 @@
             <a href="../fy.html"><button class="simple-gradient-btn">Back to Home</button></a>
         </div>
 
+
+
+
         <style>
             * {
                 margin: 0;
@@ -258,8 +262,9 @@
             }
 
             body {
-                /*background-image: linear-gradient(rgba(4, 9, 30, 0.7), #00111a), url("https://i.pinimg.com/736x/89/d0/27/89d0273183693fa492020a55fdc98936.jpg");*/
-                background: linear-gradient(90deg, #0a0a0a, #10121a, #1a1a2e);
+                background-image: linear-gradient(rgba(4, 9, 30, 0.7), #00111a), url("https://i.pinimg.com/736x/b2/c9/61/b2c96102c286f0d33662183664b288b8.jpg");
+                /*background-image: linear-gradient(rgba(4, 9, 30, 0.7), #00111a), url("image.png");*/
+                /*background: linear-gradient(90deg, #0a0a0a, #10121a, #1a1a2e);*/
 
                 background-size: cover;
                 background-position: center;
@@ -271,7 +276,7 @@
 
             h1 {
                 text-align: center;
-                text-shadow: 3px 3px 0px #f51717;
+                text-shadow: 3px 3px 0px #f46565;
                 margin-top: 40px;
             }
 
@@ -287,7 +292,7 @@
 
             h3 {
                 /* text-align: center; */
-                color: red;
+                color: #fff;
                 margin-top: 40px;
                 margin-bottom: 50px;
                 margin-left: 120px;
@@ -342,7 +347,7 @@
             }
 
             .index {
-                color: red;
+                color: #fff;
                 padding: 20px;
                 text-align: center;
             }
@@ -351,15 +356,44 @@
                 text-align: center;
             }
 
+            .grade{
+                color: #df8c8c;
+            }
+
             /*alert message*/
+            .slider-container {
+                width: 100%;
+                background-color: #f4656513;
+             /* dark background */
+                color: white;
+                overflow: hidden;
+                margin: 50px 0 50px 0;
+                border-top: 0.1px solid #ddc2c222;
+                border-bottom: 0.1px solid #ddc2c216;
+                padding: 7px 0;
+                position: relative;
+            }
+
             .notice {
-                background: transparent;
-                color: #fff;
-                font-size: 1em;
-                margin: 15px auto 30px;
-                padding: 12px 20px;
-                width: fit-content;
-                animation: popEffect 1s ease-out, glow 1.5s ease-in-out infinite alternate;
+                display: inline-block;
+                white-space: nowrap;
+                padding-left: 100%;
+                animation: scroll-left 22s linear infinite;
+                font-size: 1rem;
+            }
+
+            @keyframes scroll-left {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            strong {
+                color: #df8c8c;;
             }
 
 
@@ -371,7 +405,7 @@
             .simple-gradient-btn {
                 padding: 10px 25px;
                 font-size: 16px;
-                color: #ffffff;
+                color: #df8c8c;;
                 background: transparent;
                 border: 1.5px solid;
                 border-image: linear-gradient(90deg, #ff4b2b, #1f1f7a) 1;
@@ -381,7 +415,7 @@
             }
 
             .simple-gradient-btn:hover {
-                color: #ff4b2b;
+                color: #fff;
                 background-color: rgba(255, 255, 255, 0.05);
             }
 
@@ -399,7 +433,7 @@
 
 
             td {
-                color: #fff;
+                color: #df8c8c;
             }
 
 
@@ -436,7 +470,7 @@
 
                 h3 {
                     text-align: center;
-                    color: red;
+                    color: #fff;
                     margin-top: 40px;
                     margin-bottom: 30px;
                     margin-left: 0px;
@@ -458,7 +492,7 @@
                 }
 
                 td {
-                    color: #fff;
+                    color: #df8c8c;
                     border: 2px solid none;
                     font-size: 14px;
                 }
@@ -567,7 +601,7 @@
 
                 h3 {
                     text-align: center;
-                    color: red;
+                    color: #fff;
                     margin-top: 40px;
                     margin-bottom: 30px;
                     /* background: transparent; */
@@ -594,7 +628,7 @@
                 }
 
                 td {
-                    color: #fff;
+                    color: #df8c8c;
                     border: 2px solid none;
                     font-size: 14px;
                     /* padding: 0; */
@@ -701,7 +735,7 @@
 
                 h3 {
                     text-align: center;
-                    color: red;
+                    color: #fff;
                     margin-top: 40px;
                     margin-bottom: 30px;
                     /* background: transparent; */
@@ -723,7 +757,7 @@
                 }
 
                 td {
-                    color: #fff;
+                    color: #df8c8c;
                     border: 2px solid none;
                     font-size: 14px;
                     padding: 2px;

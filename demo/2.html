@@ -2,150 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Notice Slider</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BrainHub Navbar</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
+  <!-- Font Awesome for the icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #111;
+    .slider-container {
+      width: 100%;
+      background-color: #111; /* dark background */
       color: white;
+      overflow: hidden;
+      border-top: 2px solid #444;
+      border-bottom: 2px solid #444;
+      padding: 10px 0;
+      position: relative;
     }
 
-    .navbar {
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(10px);
+    .notice {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: scroll-left 15s linear infinite;
+      font-size: 1rem;
     }
 
-    .navbar .nav-link {
-      color: white;
-      transition: color 0.3s ease;
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
     }
 
-    .navbar .nav-link:hover,
-    .navbar .nav-link.active {
-      color: #f94c4c;
+    .fa-download {
+      color: blue;
     }
 
-    .dropdown-menu {
-      background-color: rgba(0, 0, 0, 0.9);
-      border: none;
-      backdrop-filter: blur(8px);
-    }
-
-    .dropdown-item {
-      color: red;
-    }
-
-    .dropdown-item:hover {
-      background-color: #222;
-      color: white;
-    }
-
-    .offcanvas {
-      background-color: #000;
-    }
-
-    .btn-login {
-      border: 1px solid white;
-      padding: 5px 20px;
-      color: white;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-
-    .btn-login:hover {
-      background-color: white;
-      color: black;
-    }
-
-    .btn-signup {
-      background-color: #f94c4c;
-      padding: 6px 20px;
-      border-radius: 20px;
-      color: white;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-
-    .btn-signup:hover {
-      background-color: #ff2a2a;
-    }
-
-    .bhlogo {
-      width: 60px;
-      height: auto;
+    strong {
+      color: #f0f0f0;
     }
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <!-- Logo -->
-    <a class="navbar-brand fs-4" href="#">
-      <img class="bhlogo ms-2 ms-lg-5" src="BHlogo.png" alt="BrainHub Logo">
-    </a>
-
-    <!-- Toggler -->
-    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Offcanvas Sidebar -->
-    <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel">
-
-      <!-- Sidebar Header -->
-      <div class="offcanvas-header text-white border-bottom">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BrainHub 2.0</h5>
-        <button type="button" class="btn-close text-reset btn-close-white shadow-none" data-bs-dismiss="offcanvas"
-          aria-label="Close"></button>
-      </div>
-
-      <!-- Sidebar Body -->
-      <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="https://devyani001.github.io/BrainHub/about.html">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Features</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="cgpa-calculator.html">CGPA/SGPA Calculator</a></li>
-              <li><a class="dropdown-item" href="resume.html">Resume Building</a></li>
-              <li><a class="dropdown-item" href="calcy.html">Scientific Calculator</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="https://devyani001.github.io/BrainHub/features.html">About Features</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://devyani001.github.io/BrainHub/contact.html">Contact</a>
-          </li>
-        </ul>
-
-        <!-- Login / Sign Up -->
-        <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3">
-          <a href="login_page/index.html" class="btn-login">Login</a>
-          <a href="register.php" class="btn-signup">Sign up</a>
-        </div>
-      </div>
-    </div>
+<div class="slider-container">
+  <div class="notice">
+    <strong>Note:</strong> Question papers are available 
+    <strong>only for subjects with (<i class="fa-solid fa-download"></i>) blue download icons.</strong>
   </div>
-</nav>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</div>
 
 </body>
 </html>
