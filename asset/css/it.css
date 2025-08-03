@@ -104,14 +104,10 @@ a{
     .back-btn a {
         font-size: 0.9rem;
         padding: 8px 16px;
-                font-family: 'Courier New', Courier, monospace;
-
     }
 
     .year {
         border: 1px solid none;
         margin: 100px 50px;
-                font-family: 'Courier New', Courier, monospace;
-
     }
 }
