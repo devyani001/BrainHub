@@ -4,10 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>home</title>
+  <title>BrainHub2</title>
   <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="asset\css\mediaQuery.css">
-  <!-- <link rel="stylesheet" href="asset\css\style.css"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
@@ -16,7 +14,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> <!--laptop guide -->
 </head>
 
-<body>
+<body class="vh-100">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
 
@@ -44,6 +42,7 @@
               aria-label="Close"></button>
           </div>
 
+
           <!-- sidebar body  -->
           <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
             <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
@@ -70,8 +69,7 @@
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="https://devyani001.github.io/BrainHub/features.html"
-                      style="color: red;">About Features</a></li>
+                  <li><a class="dropdown-item" href="https://devyani001.github.io/BrainHub/features.html" style="color: red;">About Features</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -87,11 +85,9 @@
               <!-- <a href="login" class="text-white">Login</a>
               <a href="signup" class="text-white text-decoration-none px-3 py-1 rounded-4"
                 style="background-color: #f94c4c;">Sign up</a> -->
-              <a href="file:///C:/Users/ASUS/OneDrive/Desktop/BrainHub2/login_page/index.html" class="text-white"
-                style="border: 1px solid white; text-decoration:none;padding: 5px 20px;">Login</a>
-              <a href="http://localhost/project2/register.php"
-                class="text-white text-decoration-none px-3 py-1 rounded-4" style="background-color: #f94c4c;">Sign
-                up</a>
+              <a href="file:///C:/Users/ASUS/OneDrive/Desktop/BrainHub2/login_page/index.html" class="text-white" style="border: 1px solid white; text-decoration:none;padding: 5px 20px;">Login</a>
+              <a href="http://localhost/project2/register.php" class="text-white text-decoration-none px-3 py-1 rounded-4"
+                style="background-color: #f94c4c;">Sign up</a>
             </div>
 
 
@@ -105,10 +101,35 @@
     </nav>
   </header>
 
+
+
+  <!-- <nav style="margin-top: 0px;">
+            <div class="nav-box left">
+                <img class="bhlogo" src="BHlogo.png" alt="">
+            </div>
+            <div class="nav-box right">
+                <ul>
+                    <li>Home</li>
+                    <li>Features</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+
+        </nav> -->
+
+
+
+
+
+
   <div class="main-heading">
     <h1 class="fyheading"
       style="text-shadow: 3px 3px 0px #4d2424; color:aliceblue;  font-family: Winky Rough, sans-serif;">FIRST
       YEAR BACHELOR OF TECHNOLOGY</h1>
+
+
 
     <P style="font-family: 'Chokokutai', system-ui;color:red">Welcome to BrainHub!</P>
     <div class="login-box">
@@ -126,6 +147,8 @@
       </form>
     </div>
   </div>
+
+
 
   <style>
     .login-box form a {
@@ -238,16 +261,53 @@
       }
     }
   </style>
-<div class="container" id="scroll"> 
-    <div class="left-text">
-        <h1 class="heading"><span style="color:orange;">F.</span><span>Y.</span><span style="color: green;">BTech</span></h1>
-        <p class="subheading">BrainHub - your study companion. <br><span style="color: rgb(10, 174, 174);">Crafted by an engineering student for future engineers!</span></p>
-        <img src="BrainHub (2).png" alt="" style="margin-top: 50px; height:200px;width:200px">
-    </div> 
+  </head>
 
-     
-    </div> 
+  <body>
+
+</html>
+
+<!-- <form action="signup.php" method="POST">
+  <input type="text" name="username" placeholder="Username" required><br>
+  <input type="email" name="email" placeholder="Email" required><br>
+  <input type="password" name="password" placeholder="Password" required><br>
+  <button type="submit">Sign Up</button>
+</form> -->
+
+
+<!-- starting page1 again -->
+
+
+<div class="mycontainer" id="scroll">
+  <div class="left-text">
+    <h1 class="heading"><span style="color:orange">F.</span><span>Y.</span><span style="color: green;">BTech</span>
+    </h1>
+    <p class="subheading">BrainHub - your study companion. <br><span style="color: rgb(10, 174, 174);">If you don’t build your own empire, someone will hire you to build theirs !</span></p>
+    <img src="BrainHub (2).png" alt="" style="margin-top: 50px; height:200px;width:200px">
+  </div>
+
+  <div class="gallary">
+    <div class="box row-2" id="box-1"><a href="Branches/CS/cse.html">COMPUTER SCIENCE <br> AND <br> ENGINEERING</a></div>
+    <div class="box" id="box-2"><a href="Branches/E&TC/entc.html">ELECTRONICS & TELECOMMUNICATION ENGINEERING</a></div>
+    <div class="box" id="box-3"><a href="Branches/MECH/mech.html">MECHANICAL <br> ENGINEERING</a></div>
+    <div class="box" id="box-4"><a href="Branches/ELECTRICAL/electric.html">ELECTRICAL <br> ENGINEERING</a></div>
+    <div class="box" id="box-5"><a href="Branches/CIVIL/civil.html">CIVIL <br> ENGINEERING</a></div>
+    <div class="box" id="box-6"><a href="Branches/IT/it.html">INFORMATION <br> TECHNOLOGY</a></div>
+    <div class="box" id="box-7"><a href="Branches/CSBS/csbs.html">COMPUTER SCIENCE & BUSINESS SYSTEM</a></div>
+    <div class="box" id="box-8"><a href="Branches/AR/ar.html">AUTOMATION <br> & <br> ROBOTICS</a></div>
+  </div>
   
+</div>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
