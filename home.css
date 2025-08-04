@@ -89,6 +89,8 @@ li {
 }
 
 .main-heading {
+    border: 1px solid none;
+    margin-top: 30px;
     width: 90%;
     color: #fff;
     position: absolute;
@@ -114,19 +116,19 @@ a {
     margin: 10px;
     padding: 10px 20px;
     background: transparent;
-    /* color: #daa520;  */ 
+    /* color: #daa520;  */
     color: white;
-    font-size: 16px; 
-    font-weight: 800; 
+    font-size: 16px;
+    /* font-weight: 800;  */
     letter-spacing: 1px;
-    border: white; 
-    transition: 0.5s;  
-}    
-   
-a:hover{    
+    border: white;
+    transition: 0.5s;
+}
+
+a:hover {
     /* HOT  */
     /* display: none; */
-    background-color: transparent; 
+    background-color: transparent;
     /* box-shadow: 0 0 4px red;  */
     box-shadow: 0 0 4px none;
     /* color: yellow; */
@@ -256,14 +258,17 @@ nav .fa {
 .gallary {
     flex-basis: 50%;
     display: grid;
-    margin-top: 70px;
-    gap: 8px;/*row m gap aayegi*/
+    margin-top: 100px;
+    gap: 8px;
+    /*row m gap aayegi*/
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 120px;
+    border: 1px solid none;
 }
 
 .box {
-    background-size: cover;/*puri ki puri image dikhegi*/
+    background-size: cover;
+    /*puri ki puri image dikhegi*/
     background-position: center;
     color: #fff;
     display: flex;
@@ -273,55 +278,7 @@ nav .fa {
     background-color: #f465650e;
     border: 1.5px solid;
     border-image: linear-gradient(90deg, #f465657e, #1f1f7a) 1;
-     transition: all 1s ease-in-out;
-}
-
-#box-1:hover{
-    background-image: url("https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    
-    cursor: pointer;
-}
-
-#box-2:hover{
-    background-image: url("https://image.slidesdocs.com/responsive-images/background/electronic-circuit-board-in-dark-powerpoint-background_3d83d70b0c__960_540.jpg");
-    
-    cursor: pointer;
-}
-
-#box-3:hover{
-    background-image: url("https://www.sydney.edu.au/content/dam/corporate/images/faculty-of-engineering-and-information-technologies/study/pg-c/heroimage-engineering.jpg");
-   
-    cursor: pointer;
-}
-
-#box-4:hover{
-    background-image: url("https://tse3.mm.bing.net/th?id=OIP.ZHe2_aKem2DL5HlJclCK6QHaE7&pid=Api&P=0&h=180");
-    
-    cursor: pointer;
-}
-
-#box-5:hover{
-    background-image: url("https://wallpaperaccess.com/full/1615863.jpg");
-    
-    cursor: pointer;
-}
-
-#box-6:hover{
-    background-image: url("https://i.pinimg.com/236x/2c/fe/5c/2cfe5c5d155cb4737263579f74eef5f0.jpg");
-    
-    cursor: pointer;
-}
-
-#box-7:hover{
-    background-image: url("https://tse4.mm.bing.net/th?id=OIP.PCqvNE8DB1qNzu6icGR9EAHaDt&pid=Api&P=0&h=180");
-    
-    cursor: pointer;
-}
-
-#box-8:hover{
-    background-image: url("https://plus.unsplash.com/premium_photo-1683120963435-6f9355d4a776?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBhbmQlMjByb2JvdGljcyUyMGVuZ2luZWVyaW5nfGVufDB8fDB8fHww");
-    
-    cursor: pointer;
+    transition: all 1s ease-in-out;
 }
 
 
@@ -359,165 +316,50 @@ nav .fa {
         grid-column: span 3;
     }
 
-    #box-2{
-        grid-area: 2 / -4 / 3 / 4;
+    #box-2 {
+        grid-area: 6 / -4 / 7 / 4;
     }
 
-    #box-7{
-        grid-area: 2 / -4 / 3 / 4;
+    #box-7 {
+        grid-area: 8 / -4 / 9 / 4;
     }
-   
+
     #box-8 {
-        grid-area: 1 / 1 / 1 / 4;
+        grid-area: 7 / 1 / 8 / 4;
 
     }
 }
 
-/* cards */
+/* FOOTER */
 
-.card:hover {
-    transform: translateY(-5px);
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.btn-outline-primary:hover {
-    background-color: #0d6efd;
-    color: white;
-}
-
-
-
-/*  */
-
-
-/* 🌌 Laptop Guide Section Styles */
-.laptop-guide {
-    /* background-image: url('https://wallpaperaccess.com/full/4230797.jpg'); */
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://wallpaperaccess.com/full/4230797.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-/* 
-.laptop-guide::before {
-    content: "";
-    position: absolute;
-    top: -100px;
-    left: -100px;
-    width: 200%;
-    height: 200%;
-    /* background: radial-gradient(circle, rgba(79, 195, 247, 0.1), transparent); *
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://wallpaperaccess.com/full/4230797.jpg);
-    animation: floatGlow 10s infinite alternate ease-in-out;
-    z-index: 0;
-} */
-
-.laptop-guide::before {
-    content: none;
-}
-
-
-@keyframes floatGlow {
-    0% {
-        transform: translate(0, 0);
-    }
-
-    100% {
-        transform: translate(-100px, 100px);
-    }
-}
-
-.guide-content {
-    position: relative;
-    z-index: 1;
-}
-
-.guide-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    text-shadow: 0 0 10px #4fc3f7;
-}
-
-.guide-content p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-}
-
-.laptop-cards {
-    display: flex;
+.footer-container{
+    border: 1px solid red;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.laptop-card {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 20px;
-    border-radius: 20px;
-    width: 260px;
-    box-shadow: 0 0 15px rgba(0, 150, 255, 0.2);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    backdrop-filter: blur(8px);
-}
-
-.laptop-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 25px rgba(79, 195, 247, 0.5);
-}
-
-.laptop-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: contain;
-    margin-bottom: 15px;
-}
-
-.laptop-card h3 {
-    color: #4fc3f7;
-    margin-bottom: 5px;
-}
-
-.laptop-card span {
-    font-size: 0.75rem;
-    color: #ccc;
-}
-
-.see-more-btn {
-    margin-top: 40px;
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #4fc3f7;
-    color: #000;
-    border-radius: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-.see-more-btn:hover {
-    background-color: #03a9f4;
-}
-
-/* about text */
-
-.bigbackground {
+    align-items: center;
     text-align: center;
-    /* margin-top: 10px; */
-
 }
 
-.background {
-    margin: 40px 30px 0 30px;
-    padding-bottom: 0px;
-    font-family: "Unica One", sans-serif;
-    text-shadow: 0 0 5px #2b2122c5, 0 0 25px #2b2122c5, 0 0 50px #2b2122c5, 0 0 100px #2b2122c5;
-    color: white;
-    font-size: 18px;
-    word-spacing: 2px;
+.footer-box{
+    border: 1px solid #1f1f7a;
+    padding: 20px;
 }
+
+.footer-box a{
+    color: gray;
+    text-decoration: none;
+}
+
+.footer-box a:hover{
+    color: #fff;
+}
+
+.footer-box i{
+    color: gray;
+}
+
+#footer-box2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+

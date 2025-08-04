@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reveal Background on Hover</title>
+  <style>
+    .box {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      border: 2px solid red;
+      background-image: url("https://tse2.mm.bing.net/th/id/OIP.OrKSoSSkk_RpMT7w7siQOAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3");
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+
+    .box::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: white; /* or use black/transparent */
+      transform: translateY(0%);
+      transition: transform 1.2s ease-in-out;
+      z-index: 2;
+    }
+
+    .box:hover::after {
+      transform: translateY(100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
