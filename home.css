@@ -342,6 +342,7 @@ nav .fa {
 .footer-box{
     border: 1px solid #1f1f7a;
     padding: 20px;
+    color: gray;
 }
 
 .footer-box a{
@@ -357,9 +358,12 @@ nav .fa {
     color: gray;
 }
 
+.footer-box i:hover{
+    color: #fff;
+}
+
 #footer-box2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
