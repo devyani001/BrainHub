@@ -1,0 +1,29 @@
+/* Global Styles */
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #fd79a8;
+    --dark-color: #121212;
+    --darker-color: #0a0a0a;
+    --light-color: #f8f9fa;
+    --gray-color: #b0b0b0;
+    --dark-gray: #333333;
+    --success-color: #00b894;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--gray-color);
+    background-color: var(--dark-color);
+}
+
+h1 {
+    color: rebeccapurple;
+}

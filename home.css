@@ -332,38 +332,135 @@ nav .fa {
 
 /* FOOTER */
 
-.footer-container{
+.footer-container {
     border: 1px solid red;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.footer-box{
-    border: 1px solid #1f1f7a;
-    padding: 20px;
+.footer-box {
+    border: 1px solid none;
     color: gray;
 }
 
-.footer-box a{
+.footer-box a {
     color: gray;
     text-decoration: none;
+    border: 1px solid none;
 }
 
-.footer-box a:hover{
+.footer-box a:hover {
     color: #fff;
 }
 
-.footer-box i{
+#footer-box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+    gap: 15px;
+    overflow-x: auto;
+    /* Optional: scroll if too small on mobile */
+    padding: 10px;
+}
+
+#footer-box1 a {
+    text-decoration: none;
+    padding: 2px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-box1 i {
     color: gray;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
-.footer-box i:hover{
+.footer-box i {
+    color: gray;
+    border: 1px solid none;
+    width: 2rem;
+}
+
+.footer-box i:hover {
     color: #fff;
 }
 
-#footer-box2{
+#footer-box2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    /* default: horizontal */
+    padding: 0 0 50px 0;
+}
+
+#footer-box2 p {
+    margin: 0;
+}
+
+#footer-box2 a {
+    text-decoration: none;
+    color: gray;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+#footer-box2 a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #footer-box2 {
+        justify-content: flex-start;
+    }
+
+}
+
+/* Mobile View: stack vertically */
+@media (max-width: 767px) {
+    #footer-box2 {
+        flex-direction: column;
+        /* vertical on small screens */
+        align-items: center;
+    }
+}
+
+/* Default: desktop/laptop — one line */
+.copyright {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+/* Make <p> inline inside flex so they appear in one line */
+.copyright p {
+    margin: 0;
+    display: inline;
+}
+
+/* Mobile: stack lines */
+@media (max-width: 767px) {
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright p {
+        display: block;
+        /* go back to block to force line break */
+        margin: 4px 0;
+    }
 }
