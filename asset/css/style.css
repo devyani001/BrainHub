@@ -6,7 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     /* background-image: url("https://i.pinimg.com/1200x/ec/8e/7e/ec8e7e6b5bb26171edc220c45960431c.jpg"); */
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/1200x/f4/51/45/f45145188ba6bdf368f43e812e44c4f2.jpg);
+    background-image: linear-gradient(rgba(2, 7, 28, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/1200x/f4/51/45/f45145188ba6bdf368f43e812e44c4f2.jpg);
 }
 
 header {
