@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://wallpaperaccess.com/full/4230797.jpg);
+    /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://wallpaperaccess.com/full/4230797.jpg); */
+    background-color: #00091b;
 }
 
 html,
@@ -167,7 +168,10 @@ p {
     image {
         min-height: 100vh;
         width: 100%;
-        background: url("https://i.pinimg.com/736x/c9/12/b6/c912b67ae419070a1c4bb8552c1bc5c1.jpg");
+            /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("https://i.pinimg.com/736x/b2/c9/61/b2c96102c286f0d33662183664b288b8.jpg"); */
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/736x/59/22/67/592267106c522959f021de03e33bde7c.jpg);
+
+        /* background: url("https://i.pinimg.com/736x/c9/12/b6/c912b67ae419070a1c4bb8552c1bc5c1.jpg"); */
         /* background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(https://images.collegedunia.com/public/reviewPhotos/369496/inbound6449048373204272265.jpg?mode=cover); */
         /* background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(https://wallpaperaccess.com/full/4230797.jpg); */
         /* background-image: url("https://wallpapercave.com/wp/wp3855137.jpg"); */
@@ -217,17 +221,7 @@ nav .fa {
     text-align: center;
     gap: 20px;
     border: 2px solid none;
-    /* margin-bottom: 200px; */
-    /* /    background-image: url("https://tse2.mm.bing.net/th?id=OIP.djs9mGfRplWKYqinBqqjjAHaDX&pid=Api&P=0&h=180"); */
-    /* background-image: url("https://wallpapercave.com/wp/wp3855137.jpg"); */
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("https://wallpaperaccess.com/full/4230797.jpg");
-    /* above img - 2nd page */
-    /* background-image: url("https://wallpaper.dog/large/20372204.jpg"); */
-    /* background-color: #2F4F4F;b;uish */
-    /* background-color: #daa520;/*yellowish */
-    /* background-color: #253342;off black */
-    /* background-color: #3d5a80;  */
-    /* background-color: #354F52; */
+    /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("https://wallpaperaccess.com/full/4230797.jpg"); */
     overflow: hidden;
     width: 100%;
     background-size: cover;

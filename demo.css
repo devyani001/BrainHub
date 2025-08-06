@@ -95,7 +95,7 @@ a {
 
 /* Services Section */
 .services {
-    padding: 100px 0;
+    padding: 0 0 100px 0;
     /* background-color: var(--darker-color); */
     /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("https://wallpaperaccess.com/full/4230797.jpg"); */
     background-color: #00091b;
