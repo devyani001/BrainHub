@@ -1,0 +1,138 @@
+.services-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--light-color);
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.section-title p {
+    color: var(--gray-color);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* Services Section */
+.services {
+    padding: 100px 0;
+    background-color: var(--darker-color);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: var(--dark-gray);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    border-color: rgba(108, 92, 231, 0.3);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(108, 92, 231, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 1px solid rgba(108, 92, 231, 0.3);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--light-color);
+}
+
+.service-card p {
+    color: var(--gray-color);
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-card,
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+   
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-card,
+    .testimonial-card {
+        padding: 20px;
+    }
+
+}
