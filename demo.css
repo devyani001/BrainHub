@@ -1,3 +1,57 @@
+/* Global Styles */
+:root {
+    /* --primary-color: #6c5ce7; */
+    --primary-color: #f46565;
+    --secondary-color: #fd79a8;
+    --dark-color: #121212;
+    --darker-color: #0a0a0a;
+    --light-color: #f8f9fa;
+    --gray-color: #b0b0b0;
+    --dark-gray: #333333;
+    --success-color: #00b894;
+    --transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+    text-align: center;
+    background-color: #f465650e;
+    border: 1.5px solid;
+    border-image: linear-gradient(90deg, #f465657e, #1f1f7a) 1;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: #f46565;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    /* border-radius: 0%; */
+}
+
+.btn-outline:hover {
+    background-color: #3042d011;
+    color: white;
+    border-radius: 30px;
+
+}
+
+
 .services-container {
     width: 100%;
     max-width: 1200px;
@@ -42,7 +96,9 @@
 /* Services Section */
 .services {
     padding: 100px 0;
-    background-color: var(--darker-color);
+    /* background-color: var(--darker-color); */
+    /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("https://wallpaperaccess.com/full/4230797.jpg"); */
+    background-color: #00091b;
 }
 
 .services-grid {
@@ -52,13 +108,14 @@
 }
 
 .service-card {
-    background-color: var(--dark-gray);
+    background-color: rgba(228, 109, 109, 0.096);
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: var(--transition);
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    /* backdrop-filter: blur(8px); */
 }
 
 .service-card:hover {
@@ -125,7 +182,7 @@
 }
 
 @media (max-width: 576px) {
-   
+
     .section-title h2 {
         font-size: 1.8rem;
     }

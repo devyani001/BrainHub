@@ -333,10 +333,11 @@ nav .fa {
 /* FOOTER */
 
 .footer-container {
-    border: 1px solid red;
+    border: 1px solid none;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #110e1b;
 }
 
 .footer-box {

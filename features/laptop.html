@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laptop Guide - BrainHub</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #00091b;
+            color: #ffffff;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .section {
+            padding: 30px 20px;
+        }
+
+        .laptop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: #f465651b;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            background-color: transparent;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+
+
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        #btn {
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 6px;
+            background-color: transparent;
+            border: 1.5px solid;
+            border-image: linear-gradient(90deg, #f46565, #1f1f7a) 1;
+            border-radius: 60px;
+            color: #f46565;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            
+        }
+
+        a{
+            width: 50%;
+            margin: 500px 0 0 130px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Laptop Guide 💻</h1>
+
+    <div class="section">
+        <h2>Budget Laptops (Below ₹60K)</h2>
+        <div class="laptop-grid">
+            <div class="card">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.aiJ4L__-L0gR4IKQxWMB-gHaEW?pid=Api&P=0&h=180"
+                    alt="ASUS Vivobook">
+                <h3>ASUS Vivobook 15</h3>
+                <p>i5 11th Gen, 8GB RAM, 512GB SSD<br>Great for students & basic dev work</p>
+            </div>
+            <div class="card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.5v81r56gDaQHEY0_hvZ0GwHaGk?pid=Api&P=0&h=180" alt="HP 15s">
+                <h3>HP 15s</h3>
+                <p>Ryzen 5, 8GB RAM, 512GB SSD<br>Good battery & build quality</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="section">
+        <h2>Premium Laptops (Above ₹60K)</h2>
+        <div class="laptop-grid">
+            <div class="card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.YWqPzO_GfVTgeHa-HzGb0QHaFT?pid=Api&P=0&h=180"
+                    alt="ASUS TUF">
+                <h3>ASUS TUF Gaming</h3>
+                <p>i7, 16GB RAM, 1TB SSD, RTX GPU<br>Powerful for dev + gaming</p>
+            </div>
+            <div class="card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.B4hMjP-Katf5LYYnTpeSVgHaFk?pid=Api&P=0&h=180"
+                    alt="MSI Modern">
+                <h3>MSI Modern 14</h3>
+                <p>i5 12th Gen, 16GB RAM<br>Sleek design, good for creators</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="section">
+        <h2>MacBooks</h2>
+        <div class="laptop-grid">
+            <div class="card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.h_Q_LdGYmOiRE83VEFqa2AHaE7?pid=Api&P=0&h=180"
+                    alt="MacBook Air M1">
+                <h3>MacBook Air M1</h3>
+                <p>Apple M1 chip, 8GB RAM, 256GB SSD<br>Best for macOS lovers, battery beast</p>
+            </div>
+            <div class="card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.pAMD547iu5Ib3oQwH2P-3wHaE8?pid=Api&P=0&h=180"
+                    alt="MacBook Pro M2">
+                <h3>MacBook Pro M2</h3>
+                <p>M2 chip, 8GB/16GB RAM, Liquid Retina<br>Ideal for dev, video editing</p>
+            </div>
+        </div>
+    </div>
+    <a href="../home.html"><button id="btn">Back</button></a>
+
+
+</body>
+
+</html>

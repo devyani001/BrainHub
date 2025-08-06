@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Web Series</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #00091b;
+            color: #f0f0f0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            border-left: 5px solid #f46565;
+            padding-left: 10px;
+            margin: 40px 0 20px;
+        }
+
+        .card {
+            background-color: #222233;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: scale(1.04);
+        }
+
+        .card-img-top {
+            height: 160px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            color: #f46565;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background-color: #f46565;
+            border: none;
+            font-size: 0.9rem;
+            padding: 6px 12px;
+        }
+
+        .btn-primary:hover {
+            background-color: #f46565;
+        }
+
+        .tag {
+            font-size: 0.7rem;
+            background: #333;
+            color: #f46565c1;
+            padding: 3px 8px;
+            border-radius: 12px;
+            margin-right: 5px;
+        }
+
+        .series-row {
+            justify-content: center;
+        }
+
+        @media (min-width: 768px) {
+            .card {
+                width: 220px;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>🎬 Best Web Series for Engineering Students</h1>
+        <p class="text-muted"><b style="color: skyblue;">Motivation, Drama, Hustle, Fun – All in One Place!</b></p>
+    </div>
+
+    <div class="container">
+
+        <!-- CATEGORY TEMPLATE -->
+        <!-- Repeat for each category -->
+
+        <div class="category-title">
+            <h2>🏫 IIT Life</h2>
+        </div>
+        <hr>
+        <div class="row g-4 series-row">
+            <!-- Card 1 -->
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/pNZQ6msbOvM/maxresdefault.jpg" class="card-img-top"
+                        alt="Kota Factory">
+                    <div class="card-body">
+                        <h5 class="card-title">Kota Factory</h5>
+                        <p><span class="tag">IIT</span> <span class="tag">Black & White</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat same card 3 times (replace image/title/links later) -->
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.QQA9VHzobgSE6SvAofyqqgHaJ4&pid=Api&P=0&h=180" class="card-img-top" alt="Series" style="background-position: center; background-size: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Laakhon Mein Ek (Season 1)</h5>
+                        <p><span class="tag">Exam</span> <span class="tag">Dark tone, IIT prep pressure</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.11eFhfkKQfejjnu-QEZXtQHaEH&pid=Api&P=0&h=180" class="card-img-top" alt="Series">
+                    <div class="card-body">
+                        <h5 class="card-title">Crash Course</h5>
+                        <p><span class="tag">Amazon Prime</span> <span class="tag">Kota institute rivalry, emotional angle</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.hak229XAR1YhjH8keB7ikwHaFj&pid=Api&P=0&h=180" class="card-img-top" alt="Series">
+                    <div class="card-body">
+                        <h5 class="card-title">Alma Matters: Inside the IIT Dream</h5>
+                        <p><span class="tag"> A Netflix docu-series about life inside.</span> <span class="tag">IIT Kharagpur</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- College Life -->
+        <div class="category-title">
+            <h2 style="margin: 150px 0 0 0;">🎓 College Life</h2>
+        </div>
+        <hr>
+        <div class="row g-4 series-row">
+            <!-- Repeat card 4 times like above -->
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.wb8qN2cmt8MC4ewwfigWLQHaEK&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls">
+                    <div class="card-body">
+                        <h5 class="card-title">3 Idiots</h5>
+                        <p><span class="tag">Engineering</span><span class="tag">mandness</span><span
+                                class="tag">Relatable</span></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.a6ib5MuxPoy-DnqVX5De8gHaEK&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls">
+                    <div class="card-body">
+                        <h5 class="card-title">Chhichhore</h5>
+                        <p><span class="tag">Fun</span> <span class="tag">Hostel</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.XYpo_aOlZ2RAMHMtkiDgHgHaJQ&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls">
+                    <div class="card-body">
+                        <h5 class="card-title">Dragon ( South Movie )</h5>
+                        <p><span class="tag">47 Backlogs</span> <span class="tag">fake degree</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.gO8H1MAeoZA-92_Y1MgFtAHaK-&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls" style="background-position: center; background-size: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Hostel Daze</h5>
+                        <p><span class="tag">Amazon Prime</span> <span class="tag">Engineering hostel madness, comedy</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- +3 more dummy cards -->
+        </div>
+
+        <!-- Startup -->
+        <div class="category-title">
+            <h2 style="margin: 150px 0 0 0;">🚀 Startup & Hustle</h2>
+        </div>
+        <hr>
+        <div class="row g-4 series-row">
+            <!-- TVF Pitchers and 3 more -->
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.nm62XXTV8R9-uSqhGPRBlwHaFj&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="TVF Pitchers">
+                    <div class="card-body">
+                        <h5 class="card-title">TVF Pitchers</h5>
+                        <p><span class="tag">Startups</span><span class="tag">Career</span><span
+                                class="tag">Motivational</span></p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.cLdQvUFnoqLjTI8C6EfrOgHaEK&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls">
+                    <div class="card-body">
+                        <h5 class="card-title">Cubicles</h5>
+                        <p><span class="tag">First job after engineering</span> <span class="tag">Career</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.gmHvE0zJ_vPmW2uCno9sXwHaEK&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls">
+                    <div class="card-body">
+                        <h5 class="card-title">Thinkistan</h5>
+                        <p><span class="tag">MX Player</span> <span class="tag">Advertising startup story</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.Ck51M8869dBm1jhtPdQqkgHaE7&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls">
+                    <div class="card-body">
+                        <h5 class="card-title">Upstarts</h5>
+                        <p><span class="tag">Netflix (Movie)</span> <span class="tag">Startup journey of 3 college grads</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gen-Z -->
+        <div class="category-title">
+            <h2 style="margin: 150px 0 0 0;">🌀 Gen-Z Vibes</h2>
+        </div>
+        <hr>
+        <div class="row g-4 series-row">
+            <!-- Campus Diaries and 3 more -->
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP._713_cLXElZY183W76cY6AHaFj&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Campus Diaries">
+                    <div class="card-body">
+                        <h5 class="card-title">Campus Diaries</h5>
+                        <p><span class="tag">Drama</span><span class="tag">Gen-Z</span><span
+                                class="tag">Friendship</span></p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.fCPUh6yS1ixWA_MRu5LnJgHaEK&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls">
+                    <div class="card-body">
+                        <h5 class="card-title">Flames</h5>
+                        <p><span class="tag">Amazon Prime / MX Player</span> <span class="tag">School romance + exam tension</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.zEigMlxMChJqL6IJ3Gp2uQHaHa&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls">
+                    <div class="card-body">
+                        <h5 class="card-title">Mismatched</h5>
+                        <p><span class="tag">Netflix</span> <span class="tag">Coding camp + love angle + social drama</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.k3H27qbxpw_rg0I85ieQtAHaEK&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls">
+                    <div class="card-body">
+                        <h5 class="card-title">Girls Hostel</h5>
+                        <p><span class="tag">Inside life of female engineering students, friendships, and freedom.</span> <span class="tag">Hostel</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pressure -->
+        <div class="category-title">
+            <h2 style="margin: 150px 0 0 0;">🧠 Dropout & Pressure</h2>
+        </div>
+        <hr>
+        <div class="row g-4 series-row" style="margin: 0 0 150px 0;">
+            <!-- Laakhon Mein Ek and 3 more -->
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.Lysgy0xDDdDvlMT1HakdQwHaFj&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Laakhon Mein Ek">
+                    <div class="card-body">
+                        <h5 class="card-title">Laakhon Mein Ek</h5>
+                        <p><span class="tag">Dropout</span><span class="tag">Mental Health</span><span class="tag">Dark
+                                Truth</span></p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.9XpqY2jfbEhE2lLjgDrXygHaEK&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls">
+                    <div class="card-body">
+                        <h5 class="card-title">Yeh Meri Family</h5>
+                        <p><span class="tag">YouTube / Amazon Mini</span> <span class="tag">School-life emotional throwback</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.FJwUZkHAlM39Luy2TIGlCAHaFO&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls">
+                    <div class="card-body">
+                        <h5 class="card-title">Jamtara</h5>
+                        <p><span class="tag">Netflix</span> <span class="tag">Young boys from villages doing phishing scams</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.8wHgA9jiBtz00sR5z69qsAHaE8&pid=Api&P=0&h=180" class="card-img-top"
+                        alt="Engineering Girls">
+                    <div class="card-body">
+                        <h5 class="card-title">Baked</h5>
+                        <p><span class="tag">YouTube</span> <span class="tag">Fun + chaos with 3 DU students building a business</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Back to Home Button -->
+    <div id="backButtonContainer" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+        <a href="../home.html"><button id="backHomeBtn" class="btn btn-outline-light px-4 py-2" style="font-weight: 600;">
+            Back to Home
+        </button></a>
+    </div>
+
+</body>
+
+</html>

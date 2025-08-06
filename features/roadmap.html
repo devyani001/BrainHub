@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roadmap for Beginners - BrainHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #00091b;
+            color: #fff;
+        }
+
+        header {
+            background-color: #00091b;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #f46565;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+        .card {
+            background-color: #f069691b;
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(192, 192, 192, 0.116);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+            color: #f46565;
+            margin-bottom: 1rem;
+        }
+
+        .card ul {
+            padding-left: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .card ul li::marker {
+            color: #f46565;
+        }
+
+        #btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            background-color: transparent;
+            border: 1.5px solid;
+            border-image: linear-gradient(90deg, #f46565, #1f1f7a) 1;
+            border-radius: 60px;
+            cursor: pointer;
+            color: #f46565;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 50%;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .intro {
+                padding: 1rem;
+            }
+
+            .card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Roadmap for Beginners</h1>
+    </header>
+
+    <div class="intro">
+        Step-by-step learning paths for coding, web development, DSA, and more — perfect for F.Y. BTech students
+        starting their journey.
+    </div>
+
+    <div class="container">
+        <!-- Coding Basics -->
+        <div class="card">
+            <h2>1. Coding Fundamentals</h2>
+            <ul>
+                <li>Understand Programming Concepts (Variables, Loops, Conditions)</li>
+                <li>Start with C or Python</li>
+                <li>Practice on HackerRank / CodeChef</li>
+                <li>Work on small logic-building problems</li>
+            </ul>
+        </div>
+
+        <!-- Web Development -->
+        <div class="card">
+            <h2>2. Web Development</h2>
+            <ul>
+                <li>HTML + CSS + JavaScript (Basics)</li>
+                <li>Build Mini Projects (Portfolio, Landing Page)</li>
+                <li>Learn Bootstrap or Tailwind CSS</li>
+                <li>Try GitHub for hosting and version control</li>
+            </ul>
+        </div>
+
+        <!-- DSA -->
+        <div class="card">
+            <h2>3. DSA (Data Structures & Algorithms)</h2>
+            <ul>
+                <li>Arrays, Strings, Linked List, Stack, Queue</li>
+                <li>Practice on LeetCode or GFG</li>
+                <li>Learn time complexity (Big O)</li>
+                <li>Participate in coding contests</li>
+            </ul>
+        </div>
+
+        <!-- Placement Prep -->
+        <div class="card">
+            <h2>4. Placement Preparation</h2>
+            <ul>
+                <li>Communication & Aptitude Practice</li>
+                <li>Resume Building (early start)</li>
+                <li>LinkedIn & Portfolio Creation</li>
+                <li>Understand Interview Rounds (HR + Technical)</li>
+            </ul>
+        </div>
+        <a href="../home.html"><button id="btn">Back</button></a>
+
+    </div>
+
+
+</body>
+
+</html>
