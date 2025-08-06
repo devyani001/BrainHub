@@ -269,18 +269,25 @@ nav .fa {
 .box {
     background-size: cover;
     /*puri ki puri image dikhegi*/
-    background-position: center;
+    background-position: top;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     background-blend-mode: hard-light;
-    background-color: #f465650e;
+    background-color: #222;
     border: 1.5px solid;
     border-image: linear-gradient(90deg, #f465657e, #1f1f7a) 1;
     transition: all 1s ease-in-out;
+    cursor: pointer;
+    font-weight: 700;
 }
 
+.box:hover {
+    background-color: #999;
+    background-position: center;
+    box-shadow: 0 0 4px #fff;
+}
 
 .row-2 {
     grid-row: span 2;
@@ -297,6 +304,43 @@ nav .fa {
 #box-8 {
     grid-area: 3 / 3 / 5 / 4;
 }
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: transparent;
+    /* color: #daa520;  */
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border: white;
+    transition: 0.5s;
+}
+
+button:hover {
+    /* HOT  */
+    /* display: none; */
+    background-color: transparent;
+    /* box-shadow: 0 0 4px red;  */
+    box-shadow: 0 0 4px none;
+    /* color: yellow; */
+    color: transparent;
+}
+
+/* cards */
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
 
 /* Media Query for width <= 1024px */
 
@@ -337,7 +381,7 @@ nav .fa {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #110e1b;
+    background-color: #00091b;
 }
 
 .footer-box {
