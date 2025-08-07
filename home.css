@@ -168,8 +168,8 @@ p {
     image {
         min-height: 100vh;
         width: 100%;
-            /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("https://i.pinimg.com/736x/b2/c9/61/b2c96102c286f0d33662183664b288b8.jpg"); */
-        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/736x/59/22/67/592267106c522959f021de03e33bde7c.jpg);
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("https://i.pinimg.com/736x/b2/c9/61/b2c96102c286f0d33662183664b288b8.jpg");
+        /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://i.pinimg.com/736x/59/22/67/592267106c522959f021de03e33bde7c.jpg); */
 
         /* background: url("https://i.pinimg.com/736x/c9/12/b6/c912b67ae419070a1c4bb8552c1bc5c1.jpg"); */
         /* background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(https://images.collegedunia.com/public/reviewPhotos/369496/inbound6449048373204272265.jpg?mode=cover); */
@@ -180,6 +180,9 @@ p {
         /* position: relative; */
     }
 
+    .section-title{
+        margin-top: 100px;
+    }
 
 }
 
